@@ -32,18 +32,6 @@ Cada ejercicio incluye el enunciado resumido, el desarrollo con explicaciones, e
 >
 > **Resultado:** $m(x)=-\dfrac75 x-\dfrac15$, con $D=I=\mathbb{R}$. ✓ Coincide con la respuesta oficial.
 
-### `1b` -  La función lineal que representa una recta paralela a $2x-3y+9=0$ y que corta el eje $x$ en $x=-\tfrac12$
-
-Despejamos la recta dada: $3y=2x+9\Rightarrow y=\dfrac23 x+3$, cuya pendiente es $\dfrac23$. Una paralela tiene la **misma pendiente** $m=\dfrac23$.
-
-Pasa por $\left(-\tfrac12,0\right)$:
-
-$$0=\dfrac23\left(-\dfrac12\right)+b=-\dfrac13+b\ \Rightarrow\ b=\dfrac13.$$
-
-**Resultado: $f(x)=\dfrac23 x+\dfrac13$, con $D=I=\mathbb{R}$.**
-
-✓ Coincide con la respuesta oficial.
-
 ### 1c
 
 {: .enunciado }

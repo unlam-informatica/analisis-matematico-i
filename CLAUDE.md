@@ -34,7 +34,48 @@ Units are:
 - **Navigation**: The `just-the-docs` theme uses `nav_order`, `has_children: true` (on parent pages), and `parent: <Title>` (on child pages) to build the sidebar.
 - **Guides** (`guias/`): self-contained reference documents covering a single specific topic with examples.
 - **Teoria files** (`teoria/`): comprehensive unit summaries covering all topics in the syllabus. Include a TOC block at the top.
-- **Practica files** (`practica/`): exercises with commented solutions or step-by-step hints.
+- **Practica files** (`practica/`): exercises with commented solutions or step-by-step hints. See the format below.
+
+## Practica exercise format
+
+Practice exercises must follow this exact structure so the site stays consistent. The two callouts (`enunciado`, `resolucion`) are configured in `_config.yml` and styled by `_sass/custom/setup.scss` (amber for statement, teal for solution).
+
+**Per-exercise template:**
+
+```markdown
+### `1d`
+
+{: .enunciado }
+> Enunciado textual del ejercicio, copiado o reescrito de forma natural.
+
+{: .resolucion }
+> Texto explicativo introduciendo el primer paso.
+>
+> $$\text{ecuación o expresión}$$
+>
+> Conector que explica qué se hizo y qué sigue.
+>
+> $$\text{siguiente paso}$$
+>
+> ... (repetir tantos pasos como sea necesario)
+>
+> **Resultado:** expresión final con dominio e imagen cuando corresponda.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
+```
+
+**Reglas que aplican siempre:**
+
+- El heading del ejercicio es `### \`Nx\`` (solo la numeración entre backticks; sin descripción al lado).
+- El enunciado va en un callout `{: .enunciado }` con una sola línea de blockquote `>`. Si el enunciado tiene varios renglones, prefijar cada uno con `>`.
+- La resolución va en un callout `{: .resolucion }` y **todas** las líneas (texto, ecuaciones en bloque, líneas vacías de separación) deben empezar con `>` para no romper el blockquote.
+- Cada paso del desarrollo se presenta como: oración explicativa → `$$ecuación$$` en bloque. Evitar amontonar varias igualdades en una sola línea; separar en pasos cortos legibles.
+- Usar `\dfrac` (no `\frac`) para fracciones que aparezcan en displays.
+- Cerrar siempre con dos líneas en negrita: `**Resultado:**` (la respuesta final, dominio e imagen cuando aplique) y `**Verificación:**` (confirmación contra la guía oficial).
+- No usar emojis tipo ✓/✗; usar las líneas de verificación en negrita.
+- Para definiciones por casos dentro de un callout, `\begin{cases}…\end{cases}` funciona dentro de `$$…$$` siempre que cada renglón del bloque empiece con `>`.
+
+**Agrupación por consigna:** los ejercicios de una misma consigna (por ejemplo "Graficar, indicar dominio e imagen") van bajo un único `## Ejercicio N — …`, y cada inciso `Na`, `Nb`, … usa el template de arriba.
 
 ## Units and syllabus
 
