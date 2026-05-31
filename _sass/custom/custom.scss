@@ -34,28 +34,32 @@
   }
 
   // Resalta el LaTeX renderizado para separarlo visualmente del texto normal.
-  // MathJax v3 (CHTML) usa mjx-container y display="true" en ecuaciones en bloque.
-  .mjx-container[display="true"] {
-    margin: 1.15rem 0;
+  // Incluye selectores de MathJax v3 (mjx-container) y fallback de v2 (.MathJax_Display).
+  mjx-container[display="true"],
+  .MathJax_Display,
+  .MathJax[display="true"] {
+    margin: 1.15rem 0 !important;
     padding: 0.9rem 1rem;
-    border: 1px solid var(--border-color);
-    border-left: 4px solid var(--link-color);
+    border: 1px solid rgba(116, 154, 255, 0.45);
+    border-left: 4px solid #8fb0ff;
     border-radius: 8px;
-    background: var(--code-background-color, rgba(255, 255, 255, 0.03));
+    background: rgba(116, 154, 255, 0.12);
+    box-shadow: 0 0 0 1px rgba(116, 154, 255, 0.08) inset;
     overflow-x: auto;
 
     &::-webkit-scrollbar { height: 6px; }
     &::-webkit-scrollbar-thumb {
-      background: var(--border-color);
+      background: rgba(143, 176, 255, 0.55);
       border-radius: 6px;
     }
   }
 
   // Realce suave para fórmulas inline, sin romper el flujo de lectura.
-  .mjx-container:not([display="true"]) {
-    padding: 0.05em 0.2em;
+  mjx-container:not([display="true"]),
+  .MathJax:not([display="true"]):not(.MathJax_Display) {
+    padding: 0.05em 0.22em;
     border-radius: 0.25em;
-    background: var(--code-background-color, rgba(255, 255, 255, 0.02));
+    background: rgba(116, 154, 255, 0.12);
   }
 
   table {
