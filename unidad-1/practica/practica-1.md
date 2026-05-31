@@ -533,6 +533,7 @@ Para diseñar un vehículo es necesario crear un modelo que permita determinar l
 | $x$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | $y$ | $0$ | $0{,}875$ | $1{,}721$ | $2{,}641$ | $3{,}531$ | $4{,}391$ | $5{,}241$ | $6{,}120$ | $6{,}992$ |
+{: .table-tight }
 
 ### `4a`
 
@@ -682,12 +683,14 @@ Se desea construir una canaleta de desagüe a partir de una hoja rectangular de 
 > Expresar el área de la sección transversal de la canaleta como una función de $x$.
 
 {: .resolucion }
-> Al doblar $x$ cm hacia arriba en cada uno de los dos bordes largos, la sección transversal queda con forma de rectángulo abierto (sin tapa superior):
+> La **sección transversal** es la figura plana que se obtiene al cortar la canaleta perpendicularmente a su largo. Como los dos bordes se doblaron hacia arriba $x$ cm, ese corte tiene forma de "U": un fondo horizontal y dos paredes verticales. El área de la sección transversal es el área que ocupa el agua cuando la canaleta está llena hasta el borde, es decir, la del rectángulo encerrado entre el fondo y las paredes.
 >
-> - La altura de los lados es $x$ cm.
-> - El ancho del fondo es lo que queda de los $12$ cm originales después de descontar los dos pliegues, es decir, $12-2x$ cm.
+> Las dimensiones de ese rectángulo son:
 >
-> El área de la sección transversal es la del rectángulo de base $12-2x$ y altura $x$:
+> - Base: $12-2x$ cm (lo que queda del ancho original después de descontar los dos pliegues).
+> - Altura: $x$ cm (cuánto se levantaron las paredes al doblarlas).
+>
+> El área es base por altura:
 >
 > $$A(x)=(12-2x)\cdot x.$$
 >
@@ -701,9 +704,7 @@ Se desea construir una canaleta de desagüe a partir de una hoja rectangular de 
 >
 > **Resultado:** $A(x)=12x-2x^2=2x(6-x)$, expresada en cm².
 >
-> **Verificación:** Coincide con la respuesta indicada en la guía.
-
-### `5b`
+> **Verificación:** El [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view) publica como respuesta del ejercicio la fórmula del **volumen** $V(x)=200x(6-x)$ (en cm³, ya incluyendo el largo de $100$ cm), mientras que aquí respondemos lo que el enunciado pide literalmente: el **área** de la sección transversal. Ambas expresiones son consistentes entre sí, ya que $V(x)=100\cdot A(x)=100\cdot 2x(6-x)=200x(6-x)$, y se usa más abajo en `5d`.
 
 {: .enunciado }
 > ¿Cuál es el dominio de esta función de acuerdo al contexto?
@@ -729,7 +730,7 @@ Se desea construir una canaleta de desagüe a partir de una hoja rectangular de 
 >
 > **Resultado:** $D_A=(0,6)$, con $x$ medido en cm.
 >
-> **Verificación:** Coincide con la respuesta indicada en la guía.
+> **Verificación:** Coincide con la respuesta indicada en el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view). El dominio es el mismo para la función área $A(x)$ usada acá y para la función volumen $V(x)=100\cdot A(x)$ con la que trabaja el solucionario, ya que ambas se anulan en los mismos extremos.
 
 ### `5c`
 
@@ -755,7 +756,7 @@ Se desea construir una canaleta de desagüe a partir de una hoja rectangular de 
 >
 > **Resultado:** el área de la sección transversal es máxima cuando $x=3$ cm, y vale $A_{\max}=18$ cm².
 >
-> **Verificación:** Coincide con la respuesta indicada en la guía.
+> **Verificación:** El valor $x=3$ cm donde se alcanza el máximo coincide con el indicado en el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view) ("se obtiene mayor volumen cuando se cortan $3$ cm de cada lado"). Como $V(x)=100\cdot A(x)$, los máximos de área y volumen ocurren en el mismo $x$. El valor $A_{\max}=18$ cm² no figura explícito en el solucionario (que reporta el máximo del volumen), pero es consistente con él: $V_{\max}=100\cdot 18=1800$ cm³ $=200\cdot 3\cdot(6-3)$.
 
 ### `5d`
 
@@ -779,13 +780,11 @@ Se desea construir una canaleta de desagüe a partir de una hoja rectangular de 
 >
 > **Resultado:** se deben doblar $x=3$ cm en cada borde para que la canaleta tenga capacidad máxima, que vale $1800$ cm³.
 >
-> **Verificación:** Coincide con la respuesta indicada en la guía.
+> **Verificación:** Coincide con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view): "se obtiene mayor volumen cuando se cortan $3$ cm de cada lado", a partir de la fórmula $V(x)=200x(6-x)$ que coincide con la $V(x)=100\cdot A(x)$ deducida aquí. Evaluando la oficial en $x=3$ se obtiene $V(3)=200\cdot 3\cdot(6-3)=1800$ cm³, igual al valor calculado.
 
 ---
 
 ## Ejercicio 6 — Caja sin tapa
-
-### `6`
 
 {: .enunciado }
 > Expresar el volumen $V(x)$ de una caja sin tapa que se construye a partir de una pieza de cartón de $24\text{cm}\times 32\text{cm}$ cortando en las esquinas cuadrados de lado $x$. ¿Cuál es el dominio de dicha función de acuerdo al contexto? Con ayuda de GG estimar cuántos centímetros debe tener el cuadrado que se corte para que el volumen de la caja sea máximo.
@@ -838,249 +837,723 @@ Se desea construir una canaleta de desagüe a partir de una hoja rectangular de 
 
 ## Ejercicio 7 — Fórmula y dominio
 
-### `7a`* - Área de rectángulo de perímetro $20$ m, en función de un lado $x$
+Encontrar una fórmula para la función descrita y dar su dominio.
 
-Si un lado es $x$, el otro es $\dfrac{20-2x}{2}=10-x$.
+### `7a`*
 
-$$A(x)=x(10-x).$$
+{: .enunciado }
+> El área de un rectángulo cuyo perímetro es $20$ m en función de uno de sus lados.
 
-Para que ambos lados sean positivos: $0<x<10$.
+{: .resolucion }
+> Llamamos $x$ a uno de los lados del rectángulo (medido en m) e $y$ al lado contiguo. El perímetro es la suma de los cuatro lados, por lo que:
+>
+> $$2x+2y=20.$$
+>
+> Despejamos $y$ en función de $x$:
+>
+> $$2y=20-2x.$$
+>
+> $$y=10-x.$$
+>
+> El área del rectángulo es el producto de los lados:
+>
+> $$A(x)=x\,(10-x).$$
+>
+> $$A(x)=10x-x^2.$$
+>
+> Para que el rectángulo exista físicamente, ambos lados deben ser positivos:
+>
+> $$x>0,\qquad 10-x>0.$$
+>
+> La segunda condición da $x<10$. Combinando:
+>
+> $$0<x<10.$$
+>
+> **Resultado:** $A:(0,10)\to\mathbb{R}\,/\,A(x)=x(10-x)$, con $D_A=(0,10)$ y $x$ medido en m.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Resultado: $A(x)=x(10-x)$, $D=(0,10)$.** ✓ Coincide con la respuesta oficial.
+### `7b`
 
-### `7b` - Perímetro de rectángulo de área $16$ m², en función de un lado $x$
+{: .enunciado }
+> El perímetro de un rectángulo cuya área es $16\text{ m}^2$ en función de uno de sus lados.
 
-El otro lado es $\dfrac{16}{x}$. El perímetro es
+{: .resolucion }
+> Llamamos $x$ a uno de los lados (medido en m) e $y$ al lado contiguo. El área del rectángulo es:
+>
+> $$x\cdot y=16.$$
+>
+> Despejamos $y$ en función de $x$ (con $x\neq 0$):
+>
+> $$y=\dfrac{16}{x}.$$
+>
+> El perímetro es la suma de los cuatro lados:
+>
+> $$P(x)=2x+2y.$$
+>
+> $$P(x)=2x+2\cdot\dfrac{16}{x}.$$
+>
+> $$P(x)=2x+\dfrac{32}{x}.$$
+>
+> Para que el rectángulo exista físicamente, ambos lados deben ser positivos. Como $y=16/x$, basta con pedir $x>0$ (eso garantiza también $y>0$):
+>
+> $$x>0.$$
+>
+> **Resultado:** $P:(0,+\infty)\to\mathbb{R}\,/\,P(x)=2x+\dfrac{32}{x}$, con $D_P=(0,+\infty)$ y $x$ medido en m.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-$$P(x)=2x+2\cdot\dfrac{16}{x}=2x+\dfrac{32}{x}.$$
+### `7c`
 
-Con $x>0$.
+{: .enunciado }
+> El área de un triángulo equilátero en función de la longitud de su lado.
 
-**Resultado: $P(x)=2x+\dfrac{32}{x}$, $D=\mathbb{R}^+$.** ✓ Coincide con la respuesta oficial.
-
-### `7c` - Área de triángulo equilátero en función del lado $l$
-
-La altura es $h=\dfrac{\sqrt3}{2}l$, entonces
-
-$$A(l)=\dfrac{l\cdot h}{2}=\dfrac{l}{2}\cdot\dfrac{\sqrt3}{2}l=\dfrac{\sqrt3}{4}l^2.$$
-
-**Resultado: $A(l)=\dfrac{\sqrt3}{4}l^2$, $D=\mathbb{R}^+$.** ✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> Llamamos $l$ a la longitud del lado del triángulo equilátero. Para calcular el área necesitamos también la altura.
+>
+> La altura $h$ se obtiene aplicando el teorema de Pitágoras a uno de los dos triángulos rectángulos en que la altura divide al triángulo equilátero. En ese triángulo rectángulo:
+>
+> - La hipotenusa es el lado $l$.
+> - Un cateto es la mitad de la base, $\dfrac{l}{2}$.
+> - El otro cateto es la altura $h$.
+>
+> Por Pitágoras:
+>
+> $$l^2=h^2+\left(\dfrac{l}{2}\right)^2.$$
+>
+> $$h^2=l^2-\dfrac{l^2}{4}=\dfrac{3l^2}{4}.$$
+>
+> $$h=\dfrac{\sqrt 3}{2}\,l.$$
+>
+> El área es base por altura sobre dos:
+>
+> $$A(l)=\dfrac{l\cdot h}{2}=\dfrac{l}{2}\cdot\dfrac{\sqrt 3}{2}\,l.$$
+>
+> $$A(l)=\dfrac{\sqrt 3}{4}\,l^2.$$
+>
+> Para que el triángulo exista físicamente, el lado debe ser positivo:
+>
+> $$l>0.$$
+>
+> **Resultado:** $A:(0,+\infty)\to\mathbb{R}\,/\,A(l)=\dfrac{\sqrt 3}{4}\,l^2$, con $D_A=(0,+\infty)$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 
-## Ejercicio 8 — $C(t)=-t^2+6t$ (concentración mg/l)
+## Ejercicio 8 — Concentración de un calmante
 
-### `8a` - Dominio e imagen en contexto, gráfica
+La concentración de un calmante en el torrente sanguíneo de una persona $t$ horas después de haberlo ingerido está dada por $C(t)=-t^2+6t$, donde $C$ es la concentración medida en miligramos por litro.
 
-Las raíces son $t=0$ y $t=6$ (la concentración es $0$ al inicio y al final). El vértice está en $t=3$:
+### `8a`
 
-$$C(3)=-9+18=9.$$
+{: .enunciado }
+> Hallar el dominio y la imagen de $C$ bajo contexto. Graficar.
 
-**Resultado: $C:[0,6]\to[0,9]$.** Parábola hacia abajo con máximo $9$ mg/l a las $3$ h (GeoGebra).
+{: .resolucion }
+> La función $C(t)=-t^2+6t$ es cuadrática con coeficiente principal $a=-1<0$: su gráfica es una parábola que abre hacia abajo. Factorizándola se observan sus raíces:
+>
+> $$C(t)=t\,(6-t).$$
+>
+> Las raíces son $t=0$ y $t=6$. Físicamente:
+>
+> - En $t=0$ la persona ingiere el calmante y la concentración es $0$.
+> - En $t=6$ horas el organismo ya eliminó la sustancia y la concentración vuelve a $0$.
+>
+> Entre ambos instantes la concentración es positiva. Por lo tanto, el dominio en contexto es:
+>
+> $$D_C=[0,6]\ \text{(horas)}.$$
+>
+> Para la imagen, buscamos el valor máximo de $C$. Como la parábola abre hacia abajo, el máximo está en el vértice, en el punto medio de las raíces:
+>
+> $$t_v=\dfrac{0+6}{2}=3.$$
+>
+> Evaluamos $C$ en $t=3$:
+>
+> $$C(3)=-(3)^2+6\cdot 3=-9+18=9.$$
+>
+> La concentración varía entonces entre $0$ y $9$ mg/l:
+>
+> $$I_C=[0,9]\ \text{(mg/l)}.$$
+>
+> Gráficamente, la parábola arranca en el origen $(0,0)$, sube hasta el vértice $(3,9)$ y baja simétricamente hasta $(6,0)$.
+>
+> **Resultado:** $C:[0,6]\to[0,9]\,/\,C(t)=-t^2+6t$, con $D_C=[0,6]$ h y $I_C=[0,9]$ mg/l.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-✓ Coincide con la respuesta oficial.
+### `8b`
 
-### `8b` - ¿Cuándo $C>8$?
+{: .enunciado }
+> ¿En qué instantes de tiempo la concentración es mayor a $8$ mg/l?
 
-$$-t^2+6t>8\ \Rightarrow\ t^2-6t+8<0\ \Rightarrow\ (t-2)(t-4)<0.$$
+{: .resolucion }
+> Planteamos la inecuación:
+>
+> $$C(t)>8.$$
+>
+> $$-t^2+6t>8.$$
+>
+> Pasamos todo a un solo miembro:
+>
+> $$-t^2+6t-8>0.$$
+>
+> Multiplicamos ambos miembros por $-1$ (invierte el sentido de la desigualdad):
+>
+> $$t^2-6t+8<0.$$
+>
+> Factorizamos el trinomio. Buscamos dos números que multiplicados den $8$ y sumados $-6$: son $-2$ y $-4$. Por lo tanto:
+>
+> $$(t-2)(t-4)<0.$$
+>
+> El producto de dos factores es negativo cuando tienen signos opuestos. Esto ocurre justamente entre las raíces:
+>
+> $$2<t<4.$$
+>
+> Como ambos extremos están dentro del dominio $[0,6]$, no hay restricciones adicionales por contexto.
+>
+> **Resultado:** la concentración supera los $8$ mg/l en el intervalo $(2,4)$, es decir, entre las $2$ y las $4$ horas después de ingerir el calmante.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-El producto es negativo entre las raíces.
+### `8c`
 
-**Resultado: $t\in(2,4)$.** ✓ Coincide con la respuesta oficial.
+{: .enunciado }
+> Calcular la razón de cambio media de la concentración en los intervalos de tiempo $[1,2]$, $[1;1{,}5]$. Interpretar bajo el contexto del problema.
 
-### `8c` - Razón de cambio media
-
-$$\text{RCM}[a,b]=\dfrac{C(b)-C(a)}{b-a}.$$
-
-En $[1,2]$: $C(1)=5$, $C(2)=8$, $\dfrac{8-5}{1}=3$.
-
-En $[1;1{,}5]$: $C(1{,}5)=-2{,}25+9=6{,}75$, $\dfrac{6{,}75-5}{0{,}5}=\dfrac{1{,}75}{0{,}5}=3{,}5$.
-
-**Resultado: $3$ mg/l por hora en $[1,2]$; $3{,}5$ mg/l por hora en $[1;1{,}5]$.** ✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> La razón de cambio media de la concentración en un intervalo $[t_1,t_2]$ se define como:
+>
+> $$\text{RCM}=\dfrac{C(t_2)-C(t_1)}{t_2-t_1}.$$
+>
+> **Intervalo $[1,2]$.** Calculamos $C(1)$ y $C(2)$:
+>
+> $$C(1)=-(1)^2+6\cdot 1=-1+6=5.$$
+>
+> $$C(2)=-(2)^2+6\cdot 2=-4+12=8.$$
+>
+> Aplicamos la fórmula:
+>
+> $$\text{RCM}_{[1,2]}=\dfrac{8-5}{2-1}=\dfrac{3}{1}=3.$$
+>
+> **Intervalo $[1;1{,}5]$.** Calculamos $C(1{,}5)$:
+>
+> $$C(1{,}5)=-(1{,}5)^2+6\cdot 1{,}5=-2{,}25+9=6{,}75.$$
+>
+> Aplicamos la fórmula:
+>
+> $$\text{RCM}_{[1;1{,}5]}=\dfrac{6{,}75-5}{1{,}5-1}=\dfrac{1{,}75}{0{,}5}=3{,}5.$$
+>
+> **Interpretación.** Cada razón de cambio media indica cuánto crece la concentración por hora en promedio durante el intervalo considerado. En $[1,2]$ la concentración aumenta a un promedio de $3$ mg/l por hora, mientras que en $[1;1{,}5]$ aumenta a $3{,}5$ mg/l por hora. La razón de cambio más alta en el intervalo más corto indica que cerca de $t=1$ h la concentración crece más rápido que entre $t=1$ y $t=2$: a medida que nos acercamos al vértice $t=3$, la pendiente instantánea va disminuyendo hasta anularse en el máximo.
+>
+> **Resultado:** $\text{RCM}_{[1,2]}=3$ mg/l por hora y $\text{RCM}_{[1;1{,}5]}=3{,}5$ mg/l por hora.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 
 ## Ejercicio 9 — Dominio natural
 
-### `9a` - $y=-\sqrt2\,x^4-3x+\tfrac17 x^2-2$
+Hallar el dominio natural de las siguientes funciones.
 
-Es un polinomio. **Resultado: $D=\mathbb{R}$.** ✓ Coincide.
+### `9a`
 
-### `9b` - $y=(x^2-3)^{-4}=\dfrac{1}{(x^2-3)^4}$
+{: .enunciado }
+> $y=-\sqrt{2}\,x^4-3x+\dfrac17\,x^2-2$.
 
-Se anula el denominador cuando $x^2=3\Rightarrow x=\pm\sqrt3$.
+{: .resolucion }
+> La expresión es un polinomio de grado $4$ (suma de potencias enteras no negativas de $x$ con coeficientes reales). Los polinomios están definidos para todo número real.
+>
+> **Resultado:** $D=\mathbb{R}$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Resultado: $D=\mathbb{R}-\{\sqrt3,-\sqrt3\}$.** ✓ Coincide.
+### `9b`
 
-### `9c` - $y=\dfrac{x^5-2x+5}{x^2-3x+2}$
+{: .enunciado }
+> $y=(x^2-3)^{-4}$.
 
-Denominador $x^2-3x+2=(x-1)(x-2)=0$ en $x=1,2$.
+{: .resolucion }
+> Por la definición de exponente negativo:
+>
+> $$y=(x^2-3)^{-4}=\dfrac{1}{(x^2-3)^4}.$$
+>
+> El denominador no puede anularse:
+>
+> $$(x^2-3)^4\neq 0\iff x^2-3\neq 0\iff x\neq\pm\sqrt{3}.$$
+>
+> **Resultado:** $D=\mathbb{R}-\{-\sqrt{3},\sqrt{3}\}$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Resultado: $D=\mathbb{R}-\{1,2\}$.** ✓ Coincide.
+### `9c`
 
-### `9d` - $y=\dfrac{\lvert x-1\rvert}{x+2}$
+{: .enunciado }
+> $y=\dfrac{x^5-2x+5}{x^2-3x+2}$.
 
-Denominador $=0$ en $x=-2$ (el numerador existe para todo $x$).
+{: .resolucion }
+> Cociente de polinomios. Los polinomios están definidos en $\mathbb{R}$, así que la única restricción viene del denominador no nulo. Factorizamos:
+>
+> $$x^2-3x+2=(x-1)(x-2).$$
+>
+> Las raíces son $x=1$ y $x=2$. Hay que excluirlas.
+>
+> **Resultado:** $D=\mathbb{R}-\{1,2\}$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Resultado: $D=\mathbb{R}-\{-2\}$.** ✓ Coincide.
+### `9d`
 
-### `9e` - $y=\sqrt{x+2}$
+{: .enunciado }
+> $y=\dfrac{\lvert x-1\rvert}{x+2}$.
 
-Radicando $\ge0\Rightarrow x\ge-2$.
+{: .resolucion }
+> El numerador $\lvert x-1\rvert$ está definido para todo $x$. El denominador no debe anularse:
+>
+> $$x+2\neq 0\iff x\neq-2.$$
+>
+> **Resultado:** $D=\mathbb{R}-\{-2\}$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Resultado: $D=[-2,+\infty)$.** ✓ Coincide.
+### `9e`
 
-### `9f` - $y=\sqrt{\dfrac{1}{2x+1}-2}$
+{: .enunciado }
+> $y=\sqrt{x+2}$.
 
-Necesitamos $\dfrac{1}{2x+1}-2\ge0\Rightarrow\dfrac{1}{2x+1}\ge2\Rightarrow\dfrac{1-2(2x+1)}{2x+1}\ge0\Rightarrow\dfrac{-4x-1}{2x+1}\ge0.$
+{: .resolucion }
+> La raíz cuadrada real exige radicando no negativo:
+>
+> $$x+2\geq 0\iff x\geq -2.$$
+>
+> **Resultado:** $D=[-2,+\infty)$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-Multiplicando por $-1$ (invierte el sentido): $\dfrac{4x+1}{2x+1}\le0$. Esto ocurre cuando numerador y denominador tienen signos opuestos: $x\in\left(-\tfrac12,-\tfrac14\right]$ (se incluye $-\tfrac14$ porque allí el numerador $4x+1=0$; se excluye $-\tfrac12$ por anular el denominador).
+### `9f`
 
-**Resultado: $D=\left(-\tfrac12,-\tfrac14\right]$.** ✓ Coincide.
+{: .enunciado }
+> $y=\sqrt{\dfrac{1}{2x+1}-2}$.
 
-### `9g` - $y=\dfrac{2x}{\sqrt{x^2-4}}$
+{: .resolucion }
+> La raíz cuadrada exige radicando no negativo y, además, el denominador interno no se debe anular:
+>
+> $$\dfrac{1}{2x+1}-2\geq 0,\qquad 2x+1\neq 0.$$
+>
+> La segunda condición da $x\neq -\dfrac12$. Para la primera, llevamos todo a una sola fracción:
+>
+> $$\dfrac{1-2(2x+1)}{2x+1}\geq 0.$$
+>
+> $$\dfrac{-4x-1}{2x+1}\geq 0.$$
+>
+> Multiplicamos por $-1$ (invierte la desigualdad):
+>
+> $$\dfrac{4x+1}{2x+1}\leq 0.$$
+>
+> Estudiamos el signo del cociente. El numerador $4x+1$ se anula en $x=-\dfrac14$; el denominador $2x+1$ en $x=-\dfrac12$.
+>
+> - Para $x<-\dfrac12$: numerador y denominador ambos negativos, cociente positivo.
+> - Para $-\dfrac12<x<-\dfrac14$: denominador positivo y numerador negativo, cociente negativo.
+> - Para $x>-\dfrac14$: ambos positivos, cociente positivo.
+>
+> El cociente es $\leq 0$ en $\left(-\dfrac12,-\dfrac14\right]$. El extremo $-\dfrac14$ se incluye porque allí el numerador es $0$; el extremo $-\dfrac12$ se excluye porque anula el denominador.
+>
+> **Resultado:** $D=\left(-\dfrac12,-\dfrac14\right]$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-Radicando **estricto** $>0$ (está en el denominador): $x^2-4>0\Rightarrow x<-2$ o $x>2$.
+### `9g`
 
-**Resultado: $D=(-\infty,-2)\cup(2,+\infty)$.** ✓ Coincide.
+{: .enunciado }
+> $y=\dfrac{2x}{\sqrt{x^2-4}}$.
 
-### `9h` - $y=\dfrac{x+3}{\lvert 3x+2\rvert}+\dfrac{1}{\sqrt[4]{x+1}}$
+{: .resolucion }
+> La raíz cuadrada está en el denominador, así que el radicando debe ser **estrictamente positivo**:
+>
+> $$x^2-4>0.$$
+>
+> $$x^2>4.$$
+>
+> $$x<-2\ \text{o}\ x>2.$$
+>
+> **Resultado:** $D=(-\infty,-2)\cup(2,+\infty)$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-Primer término: $\lvert3x+2\rvert\neq0\Rightarrow x\neq-\tfrac23$. Segundo término: raíz cuarta en el denominador exige $x+1>0\Rightarrow x>-1$.
+### `9h`
 
-Intersección: $x>-1$ y $x\neq-\tfrac23$.
+{: .enunciado }
+> $y=\dfrac{x+3}{\lvert 3x+2\rvert}+\dfrac{1}{\sqrt[4]{x+1}}$.
 
-**Resultado: $D=(-1,+\infty)-\{-\tfrac23\}$.** ✓ Coincide.
+{: .resolucion }
+> Analizamos cada término por separado e intersectamos las condiciones.
+>
+> **Primer término:** $\dfrac{x+3}{\lvert 3x+2\rvert}$ requiere $\lvert 3x+2\rvert\neq 0$, es decir:
+>
+> $$3x+2\neq 0\iff x\neq-\dfrac{2}{3}.$$
+>
+> **Segundo término:** $\dfrac{1}{\sqrt[4]{x+1}}$ tiene raíz cuarta (índice par) en el denominador, por lo que el radicando debe ser estrictamente positivo:
+>
+> $$x+1>0\iff x>-1.$$
+>
+> Intersecamos: $x>-1$ y $x\neq-\dfrac23$.
+>
+> **Resultado:** $D=(-1,+\infty)-\left\{-\dfrac23\right\}$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9i` - $y=\dfrac{x^3+5x^2-6x}{x\sqrt[3]{x^2-1}}$
+### `9i`
 
-La raíz cúbica existe para todo real, pero está en el denominador junto con $x$. Hay que excluir $x=0$ y $\sqrt[3]{x^2-1}=0\Rightarrow x^2-1=0\Rightarrow x=\pm1$.
+{: .enunciado }
+> $y=\dfrac{x^3+5x^2-6x}{x\,\sqrt[3]{x^2-1}}$.
 
-**Resultado: $D=\mathbb{R}-\{-1,0,1\}$.** ✓ Coincide.
+{: .resolucion }
+> El numerador es un polinomio (definido en todo $\mathbb{R}$). El denominador es un producto que no se debe anular:
+>
+> $$x\cdot\sqrt[3]{x^2-1}\neq 0.$$
+>
+> La raíz cúbica (índice impar) está definida para todo real, así que no hay restricción de signo. Hay que excluir:
+>
+> $$x=0\quad\text{y}\quad \sqrt[3]{x^2-1}=0\iff x^2-1=0\iff x=\pm 1.$$
+>
+> **Resultado:** $D=\mathbb{R}-\{-1,0,1\}$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9j`* - $y=\sqrt{\dfrac{3x-4}{x+1}}$
+### `9j`*
 
-Radicando $\ge0$: $\dfrac{3x-4}{x+1}\ge0$. Raíces/exclusiones: numerador $=0$ en $x=\tfrac43$, denominador $=0$ en $x=-1$.
+{: .enunciado }
+> $y=\sqrt{\dfrac{3x-4}{x+1}}$.
 
-Estudio de signos: el cociente es positivo para $x<-1$ y para $x>\tfrac43$; en $x=\tfrac43$ vale $0$ (se incluye). En $x=-1$ no está definido.
+{: .resolucion }
+> La raíz cuadrada exige radicando no negativo. Como el radicando es un cociente, pedimos:
+>
+> $$\dfrac{3x-4}{x+1}\geq 0,\qquad x+1\neq 0.$$
+>
+> El numerador se anula en $x=\dfrac43$, el denominador en $x=-1$. Estudiamos el signo del cociente:
+>
+> - $x<-1$: numerador $3x-4<0$ y denominador $x+1<0$ → cociente **positivo**.
+> - $-1<x<\dfrac43$: numerador $<0$ y denominador $>0$ → cociente **negativo**.
+> - $x>\dfrac43$: ambos positivos → cociente **positivo**.
+>
+> El cociente es $\geq 0$ en $(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$. En $x=\dfrac43$ vale $0$ (se incluye); en $x=-1$ no está definido (se excluye).
+>
+> **Resultado:** $D=(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$.
+>
+> **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=\left[\dfrac43,+\infty\right)$. La respuesta oficial omite la rama $(-\infty,-1)$, donde el cociente también es positivo (numerador y denominador ambos negativos) y por lo tanto la raíz existe. **El dominio correcto es** $(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$.
 
-Quedaría $(-\infty,-1)\cup\left[\tfrac43,+\infty\right)$.
+### `9k`*
 
-> ⚠️ **Discrepancia:** Resultado calculado: $D=(-\infty,-1)\cup\left[\tfrac43,+\infty\right)$. Respuesta del documento: $\left[\tfrac43,+\infty\right)$.
+{: .enunciado }
+> $y=\dfrac{\sqrt{3x-4}}{\sqrt{x+1}}$.
 
-**Causa probable:** en el intervalo $(-\infty,-1)$ el cociente $\dfrac{3x-4}{x+1}$ también es positivo (numerador y denominador ambos negativos), por lo que la raíz existe. La respuesta oficial parece haber omitido esa rama. **El dominio correcto es $D=(-\infty,-1)\cup\left[\tfrac43,+\infty\right)$.**
+{: .resolucion }
+> A diferencia de `9j`, ahora hay **dos raíces separadas**, cada una con su propia condición.
+>
+> - Numerador $\sqrt{3x-4}$: radicando $\geq 0$, es decir $3x-4\geq 0\iff x\geq\dfrac43$.
+> - Denominador $\sqrt{x+1}$: radicando estrictamente positivo (la raíz va abajo), es decir $x+1>0\iff x>-1$.
+>
+> Intersecando: la condición más fuerte es $x\geq\dfrac43$ (esta ya implica $x>-1$).
+>
+> **Resultado:** $D=\left[\dfrac43,+\infty\right)$.
+>
+> **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$. Aquí no es válido el intervalo $(-\infty,-1)$: para $x<-1$ se tiene $3x-4<0$ y $\sqrt{3x-4}$ no existe en $\mathbb{R}$. La oficial parece haber confundido este caso con `9j`. Notar la diferencia clave: $\sqrt{\dfrac{a}{b}}$ (`9j`) no es lo mismo que $\dfrac{\sqrt{a}}{\sqrt{b}}$ (`9k`) en cuanto a dominio. **El dominio correcto es** $\left[\dfrac43,+\infty\right)$.
 
-### `9k`* - $y=\dfrac{\sqrt{3x-4}}{\sqrt{x+1}}$
+### `9l`
 
-Ahora son **dos raíces separadas**: numerador exige $3x-4\ge0\Rightarrow x\ge\tfrac43$; denominador exige $x+1>0$ (estricto, va abajo) $\Rightarrow x>-1$. La condición más fuerte es $x\ge\tfrac43$.
+{: .enunciado }
+> $f(x)=\begin{cases} \sqrt{\dfrac{x-1}{x-3}} & \text{si } x<4, \\ \ln(5-x) & \text{si } x\geq 4. \end{cases}$
 
-**Resultado: $D=\left[\tfrac43,+\infty\right)$.**
+{: .resolucion }
+> Calculamos por separado el dominio admisible en cada tramo y luego unimos.
+>
+> **Tramo $x<4$:** $\sqrt{\dfrac{x-1}{x-3}}$ exige $\dfrac{x-1}{x-3}\geq 0$ con $x\neq 3$. Estudiamos el signo:
+>
+> - $x<1$: ambos factores negativos → cociente positivo.
+> - $1\leq x<3$: numerador $\geq 0$ y denominador $<0$ → cociente $\leq 0$ (negativo o cero).
+> - $x>3$: ambos positivos → cociente positivo.
+>
+> El cociente es $\geq 0$ en $(-\infty,1]\cup(3,+\infty)$. Intersecando con $x<4$:
+>
+> $$(-\infty,1]\cup(3,4).$$
+>
+> **Tramo $x\geq 4$:** $\ln(5-x)$ exige $5-x>0\iff x<5$. Intersecando con $x\geq 4$:
+>
+> $$[4,5).$$
+>
+> **Unión:** $(-\infty,1]\cup(3,4)\cup[4,5)=(-\infty,1]\cup(3,5)$.
+>
+> **Resultado:** $D=(-\infty,1]\cup(3,5)$.
+>
+> **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=[1,5)-\{3\}$. La oficial parece haber estudiado mal el signo del cociente $\dfrac{x-1}{x-3}$: para $x<1$ ambos factores $x-1$ y $x-3$ son negativos, su cociente es positivo y la raíz existe. Por lo tanto todo $(-\infty,1]$ pertenece al dominio. **El dominio correcto es** $(-\infty,1]\cup(3,5)$.
 
-> ⚠️ **Discrepancia:** Resultado calculado: $D=\left[\tfrac43,+\infty\right)$. Respuesta del documento: $(-\infty,-1)\cup\left[\tfrac43,+\infty\right)$.
+### `9m`
 
-**Causa probable:** aquí **no** es válido el intervalo $(-\infty,-1)$, porque para $x<-1$ se tendría $3x-4<0$ y $\sqrt{3x-4}$ no existe en $\mathbb{R}$. La respuesta oficial confundió este caso con el del inciso j). Notar la diferencia clave: $\sqrt{\tfrac{a}{b}}$ (inciso j) **no** es lo mismo que $\tfrac{\sqrt a}{\sqrt b}$ (inciso k) en cuanto a dominio. **El dominio correcto de k) es $\left[\tfrac43,+\infty\right)$.**
+{: .enunciado }
+> $f(x)=\begin{cases} \sqrt{4-x^2} & \text{si } x\leq 2, \\ \dfrac{1}{x-1} & \text{si } x>2. \end{cases}$
 
-### `9l` - $f(x)=\sqrt{\dfrac{x-1}{x-3}}\ (x<4)$; $\ln(5-x)\ (x\ge4)$
+{: .resolucion }
+> **Tramo $x\leq 2$:** $\sqrt{4-x^2}$ exige $4-x^2\geq 0\iff -2\leq x\leq 2$. Intersecando con $x\leq 2$: $[-2,2]$.
+>
+> **Tramo $x>2$:** $\dfrac{1}{x-1}$ exige $x\neq 1$, pero $1\notin(2,+\infty)$, por lo que vale todo $(2,+\infty)$.
+>
+> **Unión:** $[-2,2]\cup(2,+\infty)=[-2,+\infty)$.
+>
+> **Resultado:** $D=[-2,+\infty)$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Tramo $x<4$:** $\dfrac{x-1}{x-3}\ge0$ con exclusión $x=3$. El cociente es $\ge0$ para $x\le1$ o $x>3$. Intersecando con $x<4$: $(-\infty,1]\cup(3,4)$.
-**Tramo $x\ge4$:** $\ln(5-x)$ exige $5-x>0\Rightarrow x<5$. Intersecando con $x\ge4$: $[4,5)$.
+### `9n`
 
-Unión: $(-\infty,1]\cup(3,4)\cup[4,5)=(-\infty,1]\cup(3,5)$, y como $4$ está incluido queda $(-\infty,1]\cup(3,5)-\{3\}$... revisando: $(3,4)\cup[4,5)=(3,5)$. Total: $(-\infty,1]\cup(3,5)$.
+{: .enunciado }
+> $f(x)=\begin{cases} \sqrt{x^2-9} & \text{si } x<4, \\ \dfrac{1}{x^2-1} & \text{si } x\geq 4. \end{cases}$
 
-> ⚠️ **Discrepancia:** Resultado calculado: $D=(-\infty,1]\cup(3,5)$. Respuesta del documento: $[1,5)-\{3\}$.
+{: .resolucion }
+> **Tramo $x<4$:** $\sqrt{x^2-9}$ exige $x^2-9\geq 0\iff x\leq -3$ o $x\geq 3$. Intersecando con $x<4$: $(-\infty,-3]\cup[3,4)$.
+>
+> **Tramo $x\geq 4$:** $\dfrac{1}{x^2-1}$ exige $x\neq\pm 1$, pero ninguno está en $[4,+\infty)$, por lo que vale todo $[4,+\infty)$.
+>
+> **Unión:** $(-\infty,-3]\cup[3,4)\cup[4,+\infty)=(-\infty,-3]\cup[3,+\infty)$.
+>
+> **Resultado:** $D=(-\infty,-3]\cup[3,+\infty)$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-**Causa probable:** la respuesta oficial parece resolver el primer tramo como si fuera $\dfrac{x-1}{x-3}\ge0$ tomando solo el intervalo entre las raíces invertido o limitando a $[1,5)$. Con el estudio de signos correcto del cociente, para $x<1$ ambos factores son negativos ($x-1<0$, $x-3<0$) y el cociente es positivo, de modo que la raíz existe; por lo tanto todo $(-\infty,1]$ pertenece al dominio. **El dominio correcto es $D=(-\infty,1]\cup(3,5)$.**
+### `9ñ`
 
-### `9m` - $f(x)=\sqrt{4-x^2}\ (x\le2)$; $\dfrac{1}{x-1}\ (x>2)$
+{: .enunciado }
+> $f(x)=\begin{cases} \dfrac{1}{\sqrt{5-x}} & \text{si } x<3, \\ \sqrt{\ln(x-2)} & \text{si } x\geq 3. \end{cases}$
 
-**Tramo $x\le2$:** $4-x^2\ge0\Rightarrow-2\le x\le2$. Con $x\le2$: $[-2,2]$.
-**Tramo $x>2$:** $\dfrac{1}{x-1}$ definida salvo $x=1$, pero $1\notin(2,+\infty)$, así que vale todo $(2,+\infty)$.
-
-Unión: $[-2,2]\cup(2,+\infty)=[-2,+\infty)$.
-
-**Resultado: $D=[-2,+\infty)$.** ✓ Coincide con la respuesta oficial.
-
-### `9n` - $f(x)=\sqrt{x^2-9}\ (x<4)$; $\dfrac{1}{x^2-1}\ (x\ge4)$
-
-**Tramo $x<4$:** $x^2-9\ge0\Rightarrow x\le-3$ o $x\ge3$. Con $x<4$: $(-\infty,-3]\cup[3,4)$.
-**Tramo $x\ge4$:** $\dfrac{1}{x^2-1}$ definida salvo $x=\pm1$, que no están en $[4,+\infty)$: vale todo $[4,+\infty)$.
-
-Unión: $(-\infty,-3]\cup[3,4)\cup[4,+\infty)=(-\infty,-3]\cup[3,+\infty)$.
-
-**Resultado: $D=(-\infty,-3]\cup[3,+\infty)$.** ✓ Coincide con la respuesta oficial.
-
-### `9ñ` - $f(x)=\sqrt{\dfrac{1}{5-x}}\ (x<3)$; $\sqrt{\ln(x-2)}\ (x\ge3)$
-
-**Tramo $x<3$:** $\dfrac{1}{5-x}\ge0\Rightarrow5-x>0\Rightarrow x<5$ (con $5-x\neq0$). Con $x<3$: todo $(-\infty,3)$.
-**Tramo $x\ge3$:** $\sqrt{\ln(x-2)}$ exige $\ln(x-2)\ge0\Rightarrow x-2\ge1\Rightarrow x\ge3$ (y $x-2>0$). Con $x\ge3$: todo $[3,+\infty)$.
-
-Unión: $(-\infty,3)\cup[3,+\infty)=\mathbb{R}$.
-
-**Resultado: $D=\mathbb{R}$.** ✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> **Tramo $x<3$:** $\dfrac{1}{\sqrt{5-x}}$ exige raíz definida y denominador no nulo, es decir $5-x>0\iff x<5$. Intersecando con $x<3$: vale todo $(-\infty,3)$.
+>
+> **Tramo $x\geq 3$:** $\sqrt{\ln(x-2)}$ exige $\ln(x-2)\geq 0$, lo que equivale a $x-2\geq 1\iff x\geq 3$ (y $x-2>0$ ya se cumple). Intersecando con $x\geq 3$: vale todo $[3,+\infty)$.
+>
+> **Unión:** $(-\infty,3)\cup[3,+\infty)=\mathbb{R}$.
+>
+> **Resultado:** $D=\mathbb{R}$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 
 ## Ejercicio 10 — Dominio, imagen, intersecciones, positividad/negatividad
 
-### `10a` - $f(x)=x^2+2x-8$
+Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjuntos de positividad y negatividad de las siguientes funciones. Graficar. Corroborar con GeoGebra.
 
-Raíces: $x^2+2x-8=(x+4)(x-2)=0\Rightarrow x=-4,2$. Vértice en $x=-1$, $f(-1)=1-2-8=-9$.
+### `10a`
 
-- $D=\mathbb{R}$, $I=[-9,+\infty)$.
-- Intersecciones: $(0,-8)$, $(-4,0)$, $(2,0)$.
-- $I^+=(-\infty,-4)\cup(2,+\infty)$, $I^-=(-4,2)$.
+{: .enunciado }
+> $f(x)=x^2+2x-8$.
 
-✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> Es una función cuadrática con coeficiente principal $a=1>0$: parábola que abre hacia arriba.
+>
+> **Dominio.** Por ser polinomio:
+>
+> $$D_f=\mathbb{R}.$$
+>
+> **Raíces e intersecciones con los ejes.** Factorizamos:
+>
+> $$x^2+2x-8=(x+4)(x-2).$$
+>
+> Las raíces son $x=-4$ y $x=2$, por lo que la gráfica corta al eje $x$ en $(-4,0)$ y $(2,0)$. La intersección con el eje $y$ es $f(0)=-8$, punto $(0,-8)$.
+>
+> **Vértice e imagen.** La abscisa del vértice es el punto medio entre las raíces:
+>
+> $$x_v=\dfrac{-4+2}{2}=-1.$$
+>
+> $$f(-1)=(-1)^2+2(-1)-8=1-2-8=-9.$$
+>
+> Como la parábola abre hacia arriba, el vértice es mínimo absoluto:
+>
+> $$I_f=[-9,+\infty).$$
+>
+> **Conjuntos de positividad y negatividad.** Una parábola que abre hacia arriba es positiva fuera del intervalo entre sus raíces y negativa entre ellas:
+>
+> $$C^+=(-\infty,-4)\cup(2,+\infty),\qquad C^-=(-4,2).$$
+>
+> **Resultado:** $D_f=\mathbb{R}$, $I_f=[-9,+\infty)$, intersecciones $(0,-8)$, $(-4,0)$, $(2,0)$; $C^+=(-\infty,-4)\cup(2,+\infty)$, $C^-=(-4,2)$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `10b` - $f(x)=\lvert x-2\rvert$
+### `10b`
 
-Gráfica en "V" con vértice $(2,0)$.
+{: .enunciado }
+> $f(x)=\lvert x-2\rvert$.
 
-- $D=\mathbb{R}$, $I=[0,+\infty)$.
-- Intersecciones: $(0,2)$ y $(2,0)$.
-- $I^+=\mathbb{R}-\{2\}$ (es positiva en todo punto salvo donde se anula). $I^-$ no tiene (el valor absoluto nunca es negativo).
+{: .resolucion }
+> Es un valor absoluto: su gráfica tiene forma de "V" con vértice en $(2,0)$, donde el argumento $x-2$ se anula.
+>
+> **Dominio.** $\lvert x-2\rvert$ está definido para todo real:
+>
+> $$D_f=\mathbb{R}.$$
+>
+> **Imagen.** El valor absoluto nunca es negativo y vale $0$ en $x=2$:
+>
+> $$I_f=[0,+\infty).$$
+>
+> **Intersecciones con los ejes.** $f(0)=\lvert-2\rvert=2$ → $(0,2)$. $f(x)=0\iff x=2$ → $(2,0)$.
+>
+> **Conjuntos de positividad y negatividad.** Como $\lvert x-2\rvert\geq 0$ siempre, y solo se anula en $x=2$:
+>
+> $$C^+=\mathbb{R}-\{2\},\qquad C^-=\varnothing.$$
+>
+> **Resultado:** $D_f=\mathbb{R}$, $I_f=[0,+\infty)$, intersecciones $(0,2)$ y $(2,0)$; $C^+=\mathbb{R}-\{2\}$, $C^-=\varnothing$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-✓ Coincide con la respuesta oficial.
+### `10c`
 
-### `10c` - $f(x)=\dfrac{x}{x-2}$
+{: .enunciado }
+> $f(x)=\dfrac{x}{x-2}$.
 
-- $D=\mathbb{R}-\{2\}$. AV $x=2$, AH $y=1$, por lo que $I=\mathbb{R}-\{1\}$.
-- Intersección: $(0,0)$.
-- $I^+=(-\infty,0)\cup(2,+\infty)$, $I^-=(0,2)$.
+{: .resolucion }
+> Es una función homográfica (cociente de polinomios de grado $1$).
+>
+> **Dominio.** Denominador no nulo: $x-2\neq 0$, es decir:
+>
+> $$D_f=\mathbb{R}-\{2\}.$$
+>
+> **Asíntotas e imagen.** La asíntota vertical es $x=2$. La horizontal se obtiene del cociente de coeficientes principales:
+>
+> $$y_{AH}=\dfrac{1}{1}=1.$$
+>
+> Como la función nunca toma el valor de la AH:
+>
+> $$I_f=\mathbb{R}-\{1\}.$$
+>
+> **Intersecciones con los ejes.** $f(x)=0\iff x=0$ → corta a ambos ejes en $(0,0)$.
+>
+> **Conjuntos de positividad y negatividad.** Estudio de signos del cociente $\dfrac{x}{x-2}$ con raíz en $x=0$ y restricción en $x=2$:
+>
+> - $x<0$: numerador $<0$, denominador $<0$ → cociente positivo.
+> - $0<x<2$: numerador $>0$, denominador $<0$ → cociente negativo.
+> - $x>2$: ambos positivos → cociente positivo.
+>
+> Entonces:
+>
+> $$C^+=(-\infty,0)\cup(2,+\infty),\qquad C^-=(0,2).$$
+>
+> **Resultado:** $D_f=\mathbb{R}-\{2\}$, $I_f=\mathbb{R}-\{1\}$, intersección $(0,0)$; $C^+=(-\infty,0)\cup(2,+\infty)$, $C^-=(0,2)$. Asíntotas: $x=2$ (vertical) e $y=1$ (horizontal).
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-✓ Coincide con la respuesta oficial.
+### `10d`*
 
-### `10d`* - $g(x)=\dfrac{-2x+3}{x+4}$
+{: .enunciado }
+> $g(x)=\dfrac{-2x+3}{x+4}$.
 
-- $D=\mathbb{R}-\{-4\}$. AV $x=-4$. AH: cociente de grados iguales, $y=\dfrac{-2}{1}=-2$, entonces $I=\mathbb{R}-\{-2\}$.
-- Intersecciones: $g(x)=0\Rightarrow -2x+3=0\Rightarrow x=\tfrac32$, punto $\left(\tfrac32,0\right)$; con eje $y$: $g(0)=\tfrac34$, punto $\left(0,\tfrac34\right)$.
-- $I^+=\left(-4,\tfrac32\right)$, $I^-=(-\infty,-4)\cup\left(\tfrac32,+\infty\right)$.
+{: .resolucion }
+> Función homográfica.
+>
+> **Dominio.** $x+4\neq 0$:
+>
+> $$D_g=\mathbb{R}-\{-4\}.$$
+>
+> **Asíntotas e imagen.** Asíntota vertical $x=-4$. La horizontal es el cociente de coeficientes principales:
+>
+> $$y_{AH}=\dfrac{-2}{1}=-2.$$
+>
+> Imagen:
+>
+> $$I_g=\mathbb{R}-\{-2\}.$$
+>
+> **Intersecciones con los ejes.** $g(x)=0\iff -2x+3=0\iff x=\dfrac32$ → $\left(\dfrac32,0\right)$. $g(0)=\dfrac{3}{4}$ → $\left(0,\dfrac34\right)$.
+>
+> **Conjuntos de positividad y negatividad.** Numerador $-2x+3$ se anula en $x=\dfrac32$; denominador $x+4$ en $x=-4$.
+>
+> - $x<-4$: numerador $>0$, denominador $<0$ → cociente negativo.
+> - $-4<x<\dfrac32$: numerador $>0$, denominador $>0$ → cociente positivo.
+> - $x>\dfrac32$: numerador $<0$, denominador $>0$ → cociente negativo.
+>
+> Entonces:
+>
+> $$C^+=\left(-4,\dfrac32\right),\qquad C^-=(-\infty,-4)\cup\left(\dfrac32,+\infty\right).$$
+>
+> **Resultado:** $D_g=\mathbb{R}-\{-4\}$, $I_g=\mathbb{R}-\{-2\}$, intersecciones $\left(\dfrac32,0\right)$ y $\left(0,\dfrac34\right)$; $C^+=\left(-4,\dfrac32\right)$, $C^-=(-\infty,-4)\cup\left(\dfrac32,+\infty\right)$. Asíntotas: $x=-4$ (vertical) e $y=-2$ (horizontal).
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-✓ Coincide con la respuesta oficial.
+### `10e`
 
-### `10e` - $f(x)=\sqrt{x-2}$
+{: .enunciado }
+> $f(x)=\sqrt{x-2}$.
 
-- $D=[2,+\infty)$, $I=[0,+\infty)$.
-- Intersección: $(2,0)$.
-- $I^+=(2,+\infty)$, $I^-$ no tiene.
+{: .resolucion }
+> **Dominio.** Radicando no negativo:
+>
+> $$x-2\geq 0\iff x\geq 2.$$
+>
+> $$D_f=[2,+\infty).$$
+>
+> **Imagen.** La raíz cuadrada principal nunca es negativa, y toma todos los valores no negativos a partir de $0$:
+>
+> $$I_f=[0,+\infty).$$
+>
+> **Intersecciones con los ejes.** $f(2)=0$ → $(2,0)$. No corta el eje $y$ porque $0\notin D_f$.
+>
+> **Conjuntos de positividad y negatividad.** $\sqrt{x-2}>0$ para todo $x>2$, y solo se anula en $x=2$:
+>
+> $$C^+=(2,+\infty),\qquad C^-=\varnothing.$$
+>
+> **Resultado:** $D_f=[2,+\infty)$, $I_f=[0,+\infty)$, intersección $(2,0)$; $C^+=(2,+\infty)$, $C^-=\varnothing$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-✓ Coincide con la respuesta oficial.
+### `10f`
 
-### `10f` - $f(x)=\ln(x+1)$
+{: .enunciado }
+> $f(x)=\ln(x+1)$.
 
-- $D=(-1,+\infty)$ (pues $x+1>0$), $I=\mathbb{R}$. AV $x=-1$.
-- Intersección: $\ln(x+1)=0\Rightarrow x+1=1\Rightarrow x=0$, punto $(0,0)$.
-- $I^+=(0,+\infty)$, $I^-=(-1,0)$.
+{: .resolucion }
+> **Dominio.** El logaritmo natural exige argumento estrictamente positivo:
+>
+> $$x+1>0\iff x>-1.$$
+>
+> $$D_f=(-1,+\infty).$$
+>
+> **Imagen y asíntotas.** La función $\ln$ toma todos los reales, por lo que:
+>
+> $$I_f=\mathbb{R}.$$
+>
+> Asíntota vertical en el borde del dominio: $x=-1$.
+>
+> **Intersecciones con los ejes.** $f(x)=0\iff \ln(x+1)=0\iff x+1=1\iff x=0$ → $(0,0)$ (cruce con ambos ejes).
+>
+> **Conjuntos de positividad y negatividad.** $\ln(x+1)>0\iff x+1>1\iff x>0$, y $\ln(x+1)<0\iff 0<x+1<1\iff -1<x<0$. Entonces:
+>
+> $$C^+=(0,+\infty),\qquad C^-=(-1,0).$$
+>
+> **Resultado:** $D_f=(-1,+\infty)$, $I_f=\mathbb{R}$, intersección $(0,0)$; $C^+=(0,+\infty)$, $C^-=(-1,0)$. Asíntota vertical $x=-1$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-✓ Coincide con la respuesta oficial.
+### `10g`
 
-### `10g` - $f(x)=2^{x+1}$
+{: .enunciado }
+> $f(x)=2^{x+1}$.
 
-- $D=\mathbb{R}$, $I=(0,+\infty)$. AH $y=0$.
-- Intersección con eje $y$: $f(0)=2^1=2$, punto $(0,2)$. No corta el eje $x$.
-- $I^+=\mathbb{R}$ (la exponencial es siempre positiva), $I^-$ no tiene.
-
-✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> **Dominio.** La exponencial está definida para todo real:
+>
+> $$D_f=\mathbb{R}.$$
+>
+> **Imagen y asíntotas.** Toda exponencial con base positiva $\neq 1$ es estrictamente positiva:
+>
+> $$I_f=(0,+\infty).$$
+>
+> Asíntota horizontal $y=0$ por izquierda (cuando $x\to-\infty$, $2^{x+1}\to 0$).
+>
+> **Intersecciones con los ejes.** No corta el eje $x$ porque la exponencial nunca se anula. Con el eje $y$: $f(0)=2^{0+1}=2$ → $(0,2)$.
+>
+> **Conjuntos de positividad y negatividad.** Por la imagen:
+>
+> $$C^+=\mathbb{R},\qquad C^-=\varnothing.$$
+>
+> **Resultado:** $D_f=\mathbb{R}$, $I_f=(0,+\infty)$, intersección $(0,2)$, no corta el eje $x$; $C^+=\mathbb{R}$, $C^-=\varnothing$. Asíntota horizontal $y=0$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 
@@ -1168,6 +1641,7 @@ Recordatorio: **par** si $f(-x)=f(x)$ (simétrica respecto al eje $y$); **impar*
 | h)* | $\dfrac{1-x}{1+x}$ | $\dfrac{1+x}{1-x}\neq\pm f$ | **Ninguna** |
 | i) | $\dfrac{1}{\lvert x\rvert}$ | $\dfrac{1}{\lvert x\rvert}=f(x)$ | **Par** |
 | j) | $2^x+2^{-x}$ | $2^{-x}+2^{x}=f(x)$ | **Par** |
+{: .table-tight }
 
 **Resultado: Pares $\{a,f,i,j\}$; Impares $\{c,e,g\}$; Ninguna $\{b,d,h\}$.**
 
@@ -1293,6 +1767,7 @@ $0{,}45$ años $\approx0{,}45\cdot365\approx165$ días.
 | $\ln(-x)$ | reflexión respecto al eje $y$ | $(-\infty,0)$ |
 | $\ln\lvert x\rvert$ | par; suma la rama izquierda reflejada | $\mathbb{R}-\{0\}$ |
 | $\lvert\ln x\rvert$ | refleja hacia arriba la parte negativa ($0<x<1$) | $(0,+\infty)$ |
+{: .table-tight }
 
 ### `20b` - Sobre $e^x$ (base: $D=\mathbb{R}$, $I=(0,+\infty)$, AH $y=0$, pasa por $(0,1)$)
 
@@ -1304,6 +1779,7 @@ $0{,}45$ años $\approx0{,}45\cdot365\approx165$ días.
 | $e^{-x}$ | reflexión respecto al eje $y$ | $(0,+\infty)$ |
 | $e^{\lvert x\rvert}$ | par; mínimo $1$ en $x=0$ | $[1,+\infty)$ |
 | $-e^{2x+3}+1$ | compresión horiz., refl. eje $x$, 1 arriba (AH $y=1$) | $(-\infty,1)$ |
+{: .table-tight }
 
 Todas se verifican en GeoGebra.
 

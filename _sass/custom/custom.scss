@@ -73,6 +73,23 @@
     td { padding: 0.5rem 1rem; }
   }
 
+  // Tabla compacta: ancho ajustado al contenido, padding chico.
+  // Uso: pegar { .table-tight } debajo de la tabla en Markdown.
+  // Sirve tanto para tablas numéricas (datos x/y) como explicativas cortas:
+  // los valores numéricos y MathJax se comportan como tokens atómicos (no se
+  // parten), y los textos largos se envuelven naturalmente al haber `width: auto`.
+  table.table-tight {
+    display: table;          // anula el `display: block` del tema
+    width: auto;             // no se estira a todo el ancho del contenido
+    margin-left: 0;
+    margin-right: auto;
+
+    th, td {
+      padding: 0.3rem 0.6rem;
+      text-align: center;
+    }
+  }
+
   // Utilidad para centrar imágenes inline en Markdown.
   // Uso: ![alt](src){: .img-center}
   img.img-center {
