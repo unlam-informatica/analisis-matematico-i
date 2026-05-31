@@ -33,6 +33,31 @@
     font-size: 0.875rem;
   }
 
+  // Resalta el LaTeX renderizado para separarlo visualmente del texto normal.
+  // MathJax v3 (CHTML) usa mjx-container y display="true" en ecuaciones en bloque.
+  .mjx-container[display="true"] {
+    margin: 1.15rem 0;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--link-color);
+    border-radius: 8px;
+    background: var(--code-background-color, rgba(255, 255, 255, 0.03));
+    overflow-x: auto;
+
+    &::-webkit-scrollbar { height: 6px; }
+    &::-webkit-scrollbar-thumb {
+      background: var(--border-color);
+      border-radius: 6px;
+    }
+  }
+
+  // Realce suave para fórmulas inline, sin romper el flujo de lectura.
+  .mjx-container:not([display="true"]) {
+    padding: 0.05em 0.2em;
+    border-radius: 0.25em;
+    background: var(--code-background-color, rgba(255, 255, 255, 0.02));
+  }
+
   table {
     font-size: 0.9rem;
 
