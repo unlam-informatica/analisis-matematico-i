@@ -30,7 +30,7 @@ Una recta no constante tiene dominio e imagen $\mathbb{R}$.
 
 ✓ Coincide con la respuesta oficial.
 
-### `1b` - Lineal paralela a $2x-3y+9=0$ que corta el eje $x$ en $x=-\tfrac12$
+### `1b` -  La función lineal que representa una recta paralela a $2x-3y+9=0$ y que corta el eje $x$ en $x=-\tfrac12$
 
 Despejamos la recta dada: $3y=2x+9\Rightarrow y=\dfrac23 x+3$, cuya pendiente es $\dfrac23$. Una paralela tiene la **misma pendiente** $m=\dfrac23$.
 
@@ -42,7 +42,7 @@ $$0=\dfrac23\left(-\dfrac12\right)+b=-\dfrac13+b\ \Rightarrow\ b=\dfrac13.$$
 
 ✓ Coincide con la respuesta oficial.
 
-### `1c` - Cuadrática con vértice $V\left(-\tfrac12,5\right)$ que corta el eje $y$ en $(0,4)$
+### `1c` - Función cuadrática con vértice $V\left(-\tfrac12,5\right)$ que corta el eje $y$ en $(0,4)$
 
 Forma canónica: $p(x)=a\left(x+\tfrac12\right)^2+5$. Imponemos $p(0)=4$:
 
