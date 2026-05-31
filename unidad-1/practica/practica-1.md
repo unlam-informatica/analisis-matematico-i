@@ -44,59 +44,210 @@ $$0=\dfrac23\left(-\dfrac12\right)+b=-\dfrac13+b\ \Rightarrow\ b=\dfrac13.$$
 
 ✓ Coincide con la respuesta oficial.
 
-### `1c` - Función cuadrática con vértice $V\left(-\tfrac12,5\right)$ que corta el eje $y$ en $(0,4)$
+### 1c
 
-Forma canónica: $p(x)=a\left(x+\tfrac12\right)^2+5$. Imponemos $p(0)=4$:
+{: .enunciado }
+> La función cuadrática cuya representación gráfica es una parábola que tiene vértice en $V\left(-\dfrac12,5\right)$ y corta al eje de ordenadas en $(0,4)$.
 
-$$4=a\left(\tfrac12\right)^2+5=\dfrac{a}{4}+5\ \Rightarrow\ \dfrac{a}{4}=-1\ \Rightarrow\ a=-4.$$
+{: .resolucion }
+> Toda función cuadrática puede escribirse en forma canónica como
+>
+> $$f(x)=a(x-h)^2+k,$$
+>
+> donde $(h,k)$ es el vértice de la parábola y $a\neq 0$ determina la orientación y abertura.
+>
+> Como el vértice es $V\left(-\dfrac12,5\right)$, entonces:
+>
+> $$h=-\dfrac12,\qquad k=5.$$
+>
+> Por lo tanto:
+>
+> $$f(x)=a\left(x+\dfrac12\right)^2+5.$$
+>
+> Como corta al eje de ordenadas en $(0,4)$, se cumple que $f(0)=4$:
+>
+> $$4=a\left(0+\dfrac12\right)^2+5.$$
+>
+> $$4=\dfrac{a}{4}+5.$$
+>
+> $$-1=\dfrac{a}{4}.$$
+>
+> $$a=-4.$$
+>
+> Entonces:
+>
+> $$f(x)=-4\left(x+\dfrac12\right)^2+5.$$
+>
+> Como $a<0$, la parábola abre hacia abajo, por lo que su valor máximo está en el vértice y la imagen es $(-\infty,5]$.
+>
+> **Resultado:** $p(x)=-4\left(x+\dfrac12\right)^2+5$, con $D=\mathbb{R}$ e $I=(-\infty,5]$.
 
-Como $a<0$ la parábola abre hacia abajo, el vértice es máximo, $y_{\max}=5$.
+### `1d`
 
-**Resultado: $p(x)=-4\left(x+\tfrac12\right)^2+5$, con $D=\mathbb{R}$, $I=(-\infty,5]$.**
+{: .enunciado }
+> La función cuadrática cuya representación gráfica es una parábola que tiene raíces $x_1=-1$, $x_2=\dfrac57$ y pasa por $P\left(1,\dfrac87\right)$.
 
-✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> Si una función cuadrática tiene raíces $x_1$ y $x_2$, puede escribirse en forma factorizada como
+>
+> $$f(x)=a(x-x_1)(x-x_2),$$
+>
+> donde $a\neq 0$ determina la orientación y abertura de la parábola.
+>
+> Como las raíces son $x_1=-1$ y $x_2=\dfrac57$, resulta:
+>
+> $$f(x)=a(x+1)\left(x-\dfrac57\right).$$
+>
+> Además, la parábola pasa por $P\left(1,\dfrac87\right)$, por lo tanto:
+>
+> $$f(1)=\dfrac87.$$
+>
+> Reemplazamos:
+>
+> $$\dfrac87=a(1+1)\left(1-\dfrac57\right).$$
+>
+> $$\dfrac87=a\cdot 2\cdot \dfrac27.$$
+>
+> $$\dfrac87=\dfrac{4a}{7}.$$
+>
+> $$8=4a.$$
+>
+> $$a=2.$$
+>
+> Entonces:
+>
+> $$f(x)=2(x+1)\left(x-\dfrac57\right).$$
+>
+> Como $a>0$, la parábola abre hacia arriba. Para hallar la imagen, usamos que el vértice está en el punto medio entre las raíces:
+>
+> $$x_v=\dfrac{x_1+x_2}{2}.$$
+>
+> Reemplazamos:
+>
+> $$x_v=\dfrac{-1+\dfrac57}{2}=\dfrac{-\dfrac27}{2}=-\dfrac17.$$
+>
+> Evaluamos la función en ese valor:
+>
+> $$f\left(-\dfrac17\right)=2\left(-\dfrac17+1\right)\left(-\dfrac17-\dfrac57\right).$$
+>
+> $$f\left(-\dfrac17\right)=2\cdot\dfrac67\cdot\left(-\dfrac67\right).$$
+>
+> $$f\left(-\dfrac17\right)=-\dfrac{72}{49}.$$
+>
+> Como la parábola abre hacia arriba, ese valor es el mínimo.
+>
+> **Resultado:** $h(x)=2(x+1)\left(x-\dfrac57\right)$, con $D=\mathbb{R}$ e $I=\left[-\dfrac{72}{49},+\infty\right)$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `1d` - Cuadrática con raíces $x_1=-1$, $x_2=\tfrac57$, que pasa por $P\left(1,\tfrac87\right)$
+### `1e`
 
-Forma factorizada: $h(x)=a(x+1)\left(x-\tfrac57\right)$. Imponemos $h(1)=\tfrac87$:
+{: .enunciado }
+> $f:D_f\to I_f \,/\, f(x)=|x|$.
 
-$$\dfrac87=a(2)\left(1-\dfrac57\right)=a\cdot2\cdot\dfrac27=\dfrac{4a}{7}\ \Rightarrow\ a=\dfrac{8/7}{4/7}=2.$$
+{: .resolucion }
+> La función valor absoluto se define como
+>
+> $$|x|=\begin{cases}
+x & \text{si } x\geq 0,\\
+-x & \text{si } x<0.
+\end{cases}$$
+>
+> Esta función está definida para todo número real, porque se puede calcular el valor absoluto de cualquier $x\in\mathbb{R}$.
+>
+> Por lo tanto:
+>
+> $$D_f=\mathbb{R}.$$
+>
+> Además, el valor absoluto nunca toma valores negativos:
+>
+> $$|x|\geq 0.$$
+>
+> Su menor valor es $0$, que ocurre cuando $x=0$:
+>
+> $$f(0)=|0|=0.$$
+>
+> Por eso, su imagen es:
+>
+> $$I_f=[0,+\infty).$$
+>
+> Gráficamente, es una función con forma de “V”, con vértice en $(0,0)$.
+>
+> **Resultado:** $D_f=\mathbb{R}$ e $I_f=[0,+\infty)$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-Para la imagen calculamos el vértice. La abscisa es el punto medio de las raíces:
+### `1f`
 
-$$x_v=\dfrac{-1+\tfrac57}{2}=\dfrac{-\tfrac27}{2}=-\dfrac17.$$
+{: .enunciado }
+> $g:D_g\to \mathbb{R} \,/\, g(x)=\sqrt{x}$.
 
-$$h\left(-\tfrac17\right)=2\left(-\tfrac17+1\right)\left(-\tfrac17-\tfrac57\right)=2\cdot\dfrac67\cdot\left(-\dfrac67\right)=-\dfrac{72}{49}.$$
+{: .resolucion }
+> La función raíz cuadrada real
+>
+> $$g(x)=\sqrt{x}$$
+>
+> sólo está definida cuando el radicando es mayor o igual que cero:
+>
+> $$x\geq 0.$$
+>
+> Por lo tanto:
+>
+> $$D_g=[0,+\infty).$$
+>
+> Además, la raíz cuadrada principal nunca toma valores negativos:
+>
+> $$\sqrt{x}\geq 0.$$
+>
+> Su menor valor es $0$, que ocurre cuando $x=0$:
+>
+> $$g(0)=\sqrt{0}=0.$$
+>
+> Entonces:
+>
+> $$I_g=[0,+\infty).$$
+>
+> Gráficamente, comienza en $(0,0)$ y crece hacia la derecha.
+>
+> **Resultado:** $D_g=[0,+\infty)$ e $I_g=[0,+\infty)$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
-Como $a>0$, abre hacia arriba: el vértice es mínimo.
+### `1g`
 
-**Resultado: $h(x)=2(x+1)\left(x-\tfrac57\right)$, con $D=\mathbb{R}$, $I=\left[-\tfrac{72}{49},+\infty\right)$.**
+{: .enunciado }
+> $h:D_h\to I_h \,/\, h(x)=\dfrac1x$.
 
-✓ Coincide con la respuesta oficial.
-
-### `1e` - $f(x)=\lvert x\rvert$
-
-El valor absoluto está definido para todo real y nunca es negativo.
-
-**Resultado: $D=\mathbb{R}$, $I=[0,+\infty)$.** Gráfica en "V" con vértice en el origen (verificar en GeoGebra).
-
-✓ Coincide con la respuesta oficial.
-
-### `1f` - $g(x)=\sqrt{x}$
-
-La raíz cuadrada real exige radicando $\ge0$, y devuelve valores $\ge0$.
-
-**Resultado: $D=I=[0,+\infty)$.**
-
-✓ Coincide con la respuesta oficial.
-
-### `1g` - $h(x)=\dfrac1x$
-
-No está definida en $x=0$; tampoco toma el valor $0$. Asíntotas $x=0$ (vertical) e $y=0$ (horizontal).
-
-**Resultado: $D=I=\mathbb{R}-\{0\}$.**
-
-✓ Coincide con la respuesta oficial.
+{: .resolucion }
+> La función racional
+>
+> $$h(x)=\dfrac1x$$
+>
+> está definida para todos los valores reales excepto aquellos que anulan el denominador.
+>
+> En general, una fracción no está definida cuando su denominador vale cero. En este caso:
+>
+> $$x\neq 0.$$
+>
+> Por lo tanto:
+>
+> $$D_h=\mathbb{R}-\{0\}.$$
+>
+> Para hallar la imagen, observamos que
+>
+> $$\dfrac1x$$
+>
+> nunca puede valer $0$, porque ninguna división de la forma $\dfrac1x$ da como resultado cero.
+>
+> Entonces:
+>
+> $$I_h=\mathbb{R}-\{0\}.$$
+>
+> Gráficamente, es una hipérbola con asíntota vertical $x=0$ y asíntota horizontal $y=0$.
+>
+> **Resultado:** $D_h=\mathbb{R}-\{0\}$ e $I_h=\mathbb{R}-\{0\}$.
+>
+> **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ---
 
