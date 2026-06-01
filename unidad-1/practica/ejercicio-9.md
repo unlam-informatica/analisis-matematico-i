@@ -175,7 +175,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-## 9j*
+## 9j
 
 {: .enunciado }
 > $y=\sqrt{\dfrac{3x-4}{x+1}}$.
@@ -197,7 +197,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=\left[\dfrac43,+\infty\right)$. La respuesta oficial omite la rama $(-\infty,-1)$, donde el cociente también es positivo (numerador y denominador ambos negativos) y por lo tanto la raíz existe. **El dominio correcto es** $(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$.
 
-## 9k*
+## 9k
 
 {: .enunciado }
 > $y=\dfrac{\sqrt{3x-4}}{\sqrt{x+1}}$.

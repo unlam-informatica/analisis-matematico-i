@@ -19,7 +19,7 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 {: .resolucion }
 > **Dominio.** Los cuatro tramos cubren toda la recta real sin solapamientos:
 >
-> $$D_f=\mathbb{R}.$$
+> $$D_f=\mathbb{R}$$
 >
 > **Imagen.** Analizamos cada tramo por separado.
 >
@@ -30,7 +30,7 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 >
 > Unión: $(-\infty,1]\cup[-1,1)\cup(-1,5]\cup\{2\}=(-\infty,5]$.
 >
-> $$I_f=(-\infty,5].$$
+> $$I_f=(-\infty,5]$$
 >
 > **Ceros.** Resolvemos $f(x)=0$ en cada tramo y verificamos que el cero quede dentro del dominio del tramo.
 >
@@ -45,7 +45,7 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-## 11b*
+## 11b
 
 {: .enunciado }
 > $f(x)=\begin{cases} \dfrac{x^2-6x+9}{x-3} & x\neq 3, \\ 4 & x=3. \end{cases}$
@@ -53,21 +53,21 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 {: .resolucion }
 > **Simplificación del primer tramo.** El numerador es un trinomio cuadrado perfecto:
 >
-> $$x^2-6x+9=(x-3)^2.$$
+> $$x^2-6x+9=(x-3)^2$$
 >
 > Para $x\neq 3$ podemos simplificar:
 >
-> $$\dfrac{(x-3)^2}{x-3}=x-3.$$
+> $$\dfrac{(x-3)^2}{x-3}=x-3$$
 >
 > La función equivale a la recta $y=x-3$ con un único punto reasignado: en $x=3$, en lugar de tomar el valor "natural" $0$, vale $4$.
 >
 > **Dominio.** Los dos tramos cubren todos los reales:
 >
-> $$D_f=\mathbb{R}.$$
+> $$D_f=\mathbb{R}$$
 >
 > **Imagen.** La recta $y=x-3$ recorrería todo $\mathbb{R}$, pero al excluir $x=3$ pierde el valor $0$ que esa recta tomaba allí. El valor reasignado en $x=3$ es $4$, pero $4$ ya está cubierto por la recta en $x=7$. Por lo tanto:
 >
-> $$I_f=\mathbb{R}-\{0\}.$$
+> $$I_f=\mathbb{R}-\{0\}$$
 >
 > **Ceros.** Si fuera $x-3=0\iff x=3$, pero en $x=3$ la función vale $4\neq 0$. La función no tiene ceros.
 >
@@ -83,7 +83,7 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 {: .resolucion }
 > **Dominio.** Los dos tramos cubren todo $\mathbb{R}$:
 >
-> $$D_f=\mathbb{R}.$$
+> $$D_f=\mathbb{R}$$
 >
 > **Imagen.** Cada tramo es un valor absoluto, que nunca es negativo.
 >
@@ -92,7 +92,7 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 >
 > Unión: $\left[0,\dfrac52\right]\cup[0,+\infty)=[0,+\infty)$.
 >
-> $$I_f=[0,+\infty).$$
+> $$I_f=[0,+\infty)$$
 >
 > **Ceros.**
 >
@@ -113,7 +113,7 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 {: .resolucion }
 > **Dominio.** Los tres tramos cubren $x<-4$, $-4\leq x<-3$ y $x\geq -3$, es decir todo $\mathbb{R}$:
 >
-> $$D_f=\mathbb{R}.$$
+> $$D_f=\mathbb{R}$$
 >
 > **Imagen.** Analizamos cada tramo.
 >
@@ -123,7 +123,7 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 >
 > La unión de los tres recorridos cubre todo $\mathbb{R}$:
 >
-> $$I_f=\mathbb{R}.$$
+> $$I_f=\mathbb{R}$$
 >
 > **Ceros.**
 >

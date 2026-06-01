@@ -35,7 +35,7 @@ $$y-3=-\sqrt{x+5}\Rightarrow\sqrt{x+5}=3-y\Rightarrow x+5=(3-y)^2\Rightarrow x=(
 
 **Resultado: $f:[-5,+\infty)\to(-\infty,3]$, $f^{-1}(x)=(3-x)^2-5$.** ✓ Coincide.
 
-## 26d* - $f(x)=\log_3(2x-4)$
+## 26d - $f(x)=\log_3(2x-4)$
 
 $D:2x-4>0\Rightarrow x>2$, es decir $(2,+\infty)$; imagen $\mathbb{R}$.
 
@@ -51,7 +51,7 @@ $$y+1=2x^2\Rightarrow x^2=\dfrac{y+1}{2}\Rightarrow x=\sqrt{\dfrac{y+1}{2}}\ (x\
 
 **Resultado: $f:[0,+\infty)\to[-1,+\infty)$, $f^{-1}(x)=\sqrt{\dfrac{x+1}{2}}$** (la rama $(-\infty,0]$ da $-\sqrt{\tfrac{x+1}{2}}$). ✓ Coincide.
 
-## 26f* - $f(x)=2\operatorname{sen}(3x)$
+## 26f - $f(x)=2\operatorname{sen}(3x)$
 
 Se restringe a un intervalo donde $3x\in\left[-\tfrac\pi2,\tfrac\pi2\right]$, es decir $x\in\left[-\tfrac\pi6,\tfrac\pi6\right]$; imagen $[-2,2]$.
 

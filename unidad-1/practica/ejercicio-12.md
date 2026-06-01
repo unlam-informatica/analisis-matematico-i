@@ -25,9 +25,9 @@ Donde $t$ es el tiempo en años.
 >
 > **Tramo $0\leq t\leq 5$.** $B(t)=-t^2+7t$ es una parábola con coeficiente principal $a=-1<0$: abre hacia abajo. Sus raíces son $0$ y $7$ (despejando $-t^2+7t=t(7-t)=0$). El vértice está en el punto medio entre las raíces:
 >
-> $$t_v=\dfrac{0+7}{2}=3{,}5.$$
+> $$t_v=\dfrac{0+7}{2}=3{,}5$$
 >
-> $$B(3{,}5)=-(3{,}5)^2+7\cdot 3{,}5=-12{,}25+24{,}5=12{,}25.$$
+> $$B(3{,}5)=-(3{,}5)^2+7\cdot 3{,}5=-12{,}25+24{,}5=12{,}25$$
 >
 > En $t=0$ vale $0$ y en $t=5$ vale $-25+35=10$.
 >
@@ -49,7 +49,7 @@ Donde $t$ es el tiempo en años.
 >
 > **Tramo $0\leq t\leq 5$.** El máximo de la parábola está en el vértice calculado en `12a`:
 >
-> $$t_v=3{,}5,\qquad B(3{,}5)=12{,}25.$$
+> $$t_v=3{,}5,\qquad B(3{,}5)=12{,}25$$
 >
 > Como $t_v=3{,}5$ está dentro del intervalo $[0,5]$, ese valor es realmente alcanzado.
 >
@@ -75,13 +75,13 @@ Donde $t$ es el tiempo en años.
 >
 > **Tramo $0\leq t\leq 5$.** Planteamos:
 >
-> $$-t^2+7t=11{,}25.$$
+> $$-t^2+7t=11{,}25$$
 >
-> $$t^2-7t+11{,}25=0.$$
+> $$t^2-7t+11{,}25=0$$
 >
 > Aplicamos la resolvente:
 >
-> $$t=\dfrac{7\pm\sqrt{49-45}}{2}=\dfrac{7\pm 2}{2}.$$
+> $$t=\dfrac{7\pm\sqrt{49-45}}{2}=\dfrac{7\pm 2}{2}$$
 >
 > Las dos soluciones son $t=2{,}5$ y $t=4{,}5$. Ambas pertenecen al intervalo $[0,5]$, por lo que son válidas.
 >

@@ -109,7 +109,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-## 10d*
+## 10d
 
 {: .enunciado }
 > $g(x)=\dfrac{-2x+3}{x+4}$.

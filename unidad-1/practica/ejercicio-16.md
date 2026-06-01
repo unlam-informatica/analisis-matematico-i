@@ -18,7 +18,7 @@ Base $\lvert x\rvert$: traslación **2 a la izquierda** y **$\tfrac32$ abajo**. 
 
 **Resultado: $D=\mathbb{R}$, $I=\left[-\tfrac32,+\infty\right)$, ceros $\{-\tfrac72,-\tfrac12\}$.** ✓ Coincide.
 
-## 16b* - $g(x)=-\sqrt{x-1}+2$
+## 16b - $g(x)=-\sqrt{x-1}+2$
 
 Base $\sqrt{x}$: **1 a la derecha**, **reflexión respecto al eje $x$**, **2 arriba**.
 
