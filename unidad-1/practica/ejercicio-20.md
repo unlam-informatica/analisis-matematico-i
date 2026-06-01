@@ -9,7 +9,7 @@ permalink: /unidad-1/practica/ejercicio-20
 
 # Ejercicio 20 — Transformaciones de $\ln x$ y $e^x$
 
-### `20a` - Sobre $\ln x$ (base: $D=(0,+\infty)$, $I=\mathbb{R}$, AV $x=0$, pasa por $(1,0)$)
+## 20a - Sobre $\ln x$ (base: $D=(0,+\infty)$, $I=\mathbb{R}$, AV $x=0$, pasa por $(1,0)$)
 
 | Función | Transformación | Dominio |
 |---------|----------------|---------|
@@ -21,7 +21,7 @@ permalink: /unidad-1/practica/ejercicio-20
 | $\lvert\ln x\rvert$ | refleja hacia arriba la parte negativa ($0<x<1$) | $(0,+\infty)$ |
 {: .table-tight }
 
-### `20b` - Sobre $e^x$ (base: $D=\mathbb{R}$, $I=(0,+\infty)$, AH $y=0$, pasa por $(0,1)$)
+## 20b - Sobre $e^x$ (base: $D=\mathbb{R}$, $I=(0,+\infty)$, AH $y=0$, pasa por $(0,1)$)
 
 | Función | Transformación | Imagen |
 |---------|----------------|--------|

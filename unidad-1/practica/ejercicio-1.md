@@ -9,7 +9,7 @@ permalink: /unidad-1/practica/ejercicio-1
 
 # Ejercicio 1 — Graficar, indicar dominio e imagen
 
-### `1a`
+## 1a
 
 {: .enunciado }
 > La función lineal que pasa por $P(-3,4)$ y $Q(2,-3)$.
@@ -27,7 +27,7 @@ permalink: /unidad-1/practica/ejercicio-1
 >
 > **Resultado:** $m(x)=-\dfrac75 x-\dfrac15$, con $D=I=\mathbb{R}$. ✓ Coincide con la respuesta oficial.
 
-### `1b`
+## 1b
 
 {: .enunciado }
 > La función lineal que representa una recta paralela a $2x-3y+9=0$ y corta al eje $x$ en el punto de abscisa $x=-\dfrac12$.
@@ -71,7 +71,7 @@ permalink: /unidad-1/practica/ejercicio-1
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### 1c
+## 1c
 
 {: .enunciado }
 > La función cuadrática cuya representación gráfica es una parábola que tiene vértice en $V\left(-\dfrac12,5\right)$ y corta al eje de ordenadas en $(0,4)$.
@@ -109,7 +109,7 @@ permalink: /unidad-1/practica/ejercicio-1
 >
 > **Resultado:** $p(x)=-4\left(x+\dfrac12\right)^2+5$, con $D=\mathbb{R}$ e $I=(-\infty,5]$.
 
-### `1d`
+## 1d
 
 {: .enunciado }
 > La función cuadrática cuya representación gráfica es una parábola que tiene raíces $x_1=-1$, $x_2=\dfrac57$ y pasa por $P\left(1,\dfrac87\right)$.
@@ -167,7 +167,7 @@ permalink: /unidad-1/practica/ejercicio-1
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `1e`
+## 1e
 
 {: .enunciado }
 > $f:D_f\to I_f \,/\, f(x)=\lvert x\rvert$.
@@ -201,7 +201,7 @@ permalink: /unidad-1/practica/ejercicio-1
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `1f`
+## 1f
 
 {: .enunciado }
 > $g:D_g\to \mathbb{R} \,/\, g(x)=\sqrt{x}$.
@@ -237,7 +237,7 @@ permalink: /unidad-1/practica/ejercicio-1
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `1g`
+## 1g
 
 {: .enunciado }
 > $h:D_h\to I_h \,/\, h(x)=\dfrac1x$.

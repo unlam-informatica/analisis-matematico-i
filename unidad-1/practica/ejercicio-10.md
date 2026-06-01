@@ -11,7 +11,7 @@ permalink: /unidad-1/practica/ejercicio-10
 
 Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjuntos de positividad y negatividad de las siguientes funciones. Graficar. Corroborar con GeoGebra.
 
-### `10a`
+## 10a
 
 {: .enunciado }
 > $f(x)=x^2+2x-8$.
@@ -47,7 +47,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `10b`
+## 10b
 
 {: .enunciado }
 > $f(x)=\lvert x-2\rvert$.
@@ -73,7 +73,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `10c`
+## 10c
 
 {: .enunciado }
 > $f(x)=\dfrac{x}{x-2}$.
@@ -109,7 +109,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `10d`*
+## 10d*
 
 {: .enunciado }
 > $g(x)=\dfrac{-2x+3}{x+4}$.
@@ -145,7 +145,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `10e`
+## 10e
 
 {: .enunciado }
 > $f(x)=\sqrt{x-2}$.
@@ -171,7 +171,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `10f`
+## 10f
 
 {: .enunciado }
 > $f(x)=\ln(x+1)$.
@@ -199,7 +199,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `10g`
+## 10g
 
 {: .enunciado }
 > $f(x)=2^{x+1}$.

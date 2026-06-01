@@ -13,7 +13,7 @@ El siguiente gráfico muestra el vaciado de un tanque de agua. Sólo mirando el 
 
 ![Vaciado de un tanque](3.png){: .img-center}
 
-### `3a`
+## 3a
 
 {: .enunciado }
 > ¿Cuánta agua había en el tanque y en cuánto tiempo tardó en vaciarse?
@@ -30,7 +30,7 @@ El siguiente gráfico muestra el vaciado de un tanque de agua. Sólo mirando el 
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `3b`
+## 3b
 
 {: .enunciado }
 > ¿Cuántos litros por minuto salían del tanque cuando se vaciaba?
@@ -52,7 +52,7 @@ El siguiente gráfico muestra el vaciado de un tanque de agua. Sólo mirando el 
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `3c`
+## 3c
 
 {: .enunciado }
 > Marquen en el gráfico el momento en el que en el tanque había $1000$ litros. ¿Cuánto tiempo había transcurrido desde que se comenzó a vaciar?
@@ -80,7 +80,7 @@ El siguiente gráfico muestra el vaciado de un tanque de agua. Sólo mirando el 
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `3d`
+## 3d
 
 **Trabajando analíticamente**
 

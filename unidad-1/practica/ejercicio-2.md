@@ -11,7 +11,7 @@ permalink: /unidad-1/practica/ejercicio-2
 
 Obtener la ecuación de la recta que relaciona la temperatura $C$ en grados Celsius con la temperatura $F$ en grados Fahrenheit, sabiendo que el agua se hiela a $0^\circ C\,(32^\circ F)$ y hierve a $100^\circ C\,(212^\circ F)$.
 
-### `2a`
+## 2a
 
 {: .enunciado }
 > Hallar la función (terna) que modela la situación planteada.
@@ -51,7 +51,7 @@ Obtener la ecuación de la recta que relaciona la temperatura $C$ en grados Cels
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `2b`
+## 2b
 
 {: .enunciado }
 > ¿Cuántos grados Fahrenheit son $-10^\circ C$?
@@ -75,7 +75,7 @@ Obtener la ecuación de la recta que relaciona la temperatura $C$ en grados Cels
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `2c`
+## 2c
 
 {: .enunciado }
 > ¿Cuántos grados Celsius se corresponden con $0^\circ F$?
@@ -109,7 +109,7 @@ Obtener la ecuación de la recta que relaciona la temperatura $C$ en grados Cels
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `2d`
+## 2d
 
 {: .enunciado }
 > Calcular el cambio de temperatura $\Delta F$ en los intervalos $[0,10]$, $[10,20]$ (en grados Celsius). Interpretar gráficamente.

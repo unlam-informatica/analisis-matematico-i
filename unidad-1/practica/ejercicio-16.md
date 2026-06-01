@@ -9,7 +9,7 @@ permalink: /unidad-1/practica/ejercicio-16
 
 # Ejercicio 16 — Graficar con transformaciones; dominio, imagen, ceros
 
-### `16a` - $f(x)=\lvert x+2\rvert-\tfrac32$
+## 16a - $f(x)=\lvert x+2\rvert-\tfrac32$
 
 Base $\lvert x\rvert$: traslación **2 a la izquierda** y **$\tfrac32$ abajo**. Vértice en $\left(-2,-\tfrac32\right)$.
 
@@ -18,7 +18,7 @@ Base $\lvert x\rvert$: traslación **2 a la izquierda** y **$\tfrac32$ abajo**. 
 
 **Resultado: $D=\mathbb{R}$, $I=\left[-\tfrac32,+\infty\right)$, ceros $\{-\tfrac72,-\tfrac12\}$.** ✓ Coincide.
 
-### `16b`* - $g(x)=-\sqrt{x-1}+2$
+## 16b* - $g(x)=-\sqrt{x-1}+2$
 
 Base $\sqrt{x}$: **1 a la derecha**, **reflexión respecto al eje $x$**, **2 arriba**.
 
@@ -27,7 +27,7 @@ Base $\sqrt{x}$: **1 a la derecha**, **reflexión respecto al eje $x$**, **2 arr
 
 **Resultado: $D=[1,+\infty)$, $I=(-\infty,2]$, cero $\{5\}$.** ✓ Coincide.
 
-### `16c` - $m(x)=\dfrac{1}{2-x}$
+## 16c - $m(x)=\dfrac{1}{2-x}$
 
 Reescribimos $\dfrac{1}{2-x}=-\dfrac{1}{x-2}$: base $\tfrac1x$, traslación 2 a la derecha y reflexión.
 
@@ -36,7 +36,7 @@ Reescribimos $\dfrac{1}{2-x}=-\dfrac{1}{x-2}$: base $\tfrac1x$, traslación 2 a 
 
 **Resultado: $D=\mathbb{R}-\{2\}$, $I=\mathbb{R}-\{0\}$, sin ceros.** ✓ Coincide.
 
-### `16d` - $k(x)=(x+4)^3-1$
+## 16d - $k(x)=(x+4)^3-1$
 
 Base $x^3$: **4 a la izquierda**, **1 abajo**.
 

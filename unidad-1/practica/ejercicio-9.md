@@ -11,7 +11,7 @@ permalink: /unidad-1/practica/ejercicio-9
 
 Hallar el dominio natural de las siguientes funciones.
 
-### `9a`
+## 9a
 
 {: .enunciado }
 > $y=-\sqrt{2}\,x^4-3x+\dfrac17\,x^2-2$.
@@ -23,7 +23,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9b`
+## 9b
 
 {: .enunciado }
 > $y=(x^2-3)^{-4}$.
@@ -41,7 +41,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9c`
+## 9c
 
 {: .enunciado }
 > $y=\dfrac{x^5-2x+5}{x^2-3x+2}$.
@@ -57,7 +57,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9d`
+## 9d
 
 {: .enunciado }
 > $y=\dfrac{\lvert x-1\rvert}{x+2}$.
@@ -71,7 +71,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9e`
+## 9e
 
 {: .enunciado }
 > $y=\sqrt{x+2}$.
@@ -85,7 +85,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9f`
+## 9f
 
 {: .enunciado }
 > $y=\sqrt{\dfrac{1}{2x+1}-2}$.
@@ -117,7 +117,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9g`
+## 9g
 
 {: .enunciado }
 > $y=\dfrac{2x}{\sqrt{x^2-4}}$.
@@ -135,7 +135,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9h`
+## 9h
 
 {: .enunciado }
 > $y=\dfrac{x+3}{\lvert 3x+2\rvert}+\dfrac{1}{\sqrt[4]{x+1}}$.
@@ -157,7 +157,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9i`
+## 9i
 
 {: .enunciado }
 > $y=\dfrac{x^3+5x^2-6x}{x\,\sqrt[3]{x^2-1}}$.
@@ -175,7 +175,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9j`*
+## 9j*
 
 {: .enunciado }
 > $y=\sqrt{\dfrac{3x-4}{x+1}}$.
@@ -197,7 +197,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=\left[\dfrac43,+\infty\right)$. La respuesta oficial omite la rama $(-\infty,-1)$, donde el cociente también es positivo (numerador y denominador ambos negativos) y por lo tanto la raíz existe. **El dominio correcto es** $(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$.
 
-### `9k`*
+## 9k*
 
 {: .enunciado }
 > $y=\dfrac{\sqrt{3x-4}}{\sqrt{x+1}}$.
@@ -214,7 +214,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$. Aquí no es válido el intervalo $(-\infty,-1)$: para $x<-1$ se tiene $3x-4<0$ y $\sqrt{3x-4}$ no existe en $\mathbb{R}$. La oficial parece haber confundido este caso con `9j`. Notar la diferencia clave: $\sqrt{\dfrac{a}{b}}$ (`9j`) no es lo mismo que $\dfrac{\sqrt{a}}{\sqrt{b}}$ (`9k`) en cuanto a dominio. **El dominio correcto es** $\left[\dfrac43,+\infty\right)$.
 
-### `9l`
+## 9l
 
 {: .enunciado }
 > $f(x)=\begin{cases} \sqrt{\dfrac{x-1}{x-3}} & \text{si } x<4, \\ \ln(5-x) & \text{si } x\geq 4. \end{cases}$
@@ -242,7 +242,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=[1,5)-\{3\}$. La oficial parece haber estudiado mal el signo del cociente $\dfrac{x-1}{x-3}$: para $x<1$ ambos factores $x-1$ y $x-3$ son negativos, su cociente es positivo y la raíz existe. Por lo tanto todo $(-\infty,1]$ pertenece al dominio. **El dominio correcto es** $(-\infty,1]\cup(3,5)$.
 
-### `9m`
+## 9m
 
 {: .enunciado }
 > $f(x)=\begin{cases} \sqrt{4-x^2} & \text{si } x\leq 2, \\ \dfrac{1}{x-1} & \text{si } x>2. \end{cases}$
@@ -258,7 +258,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9n`
+## 9n
 
 {: .enunciado }
 > $f(x)=\begin{cases} \sqrt{x^2-9} & \text{si } x<4, \\ \dfrac{1}{x^2-1} & \text{si } x\geq 4. \end{cases}$
@@ -274,7 +274,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `9ñ`
+## 9ñ
 
 {: .enunciado }
 > $f(x)=\begin{cases} \dfrac{1}{\sqrt{5-x}} & \text{si } x<3, \\ \sqrt{\ln(x-2)} & \text{si } x\geq 3. \end{cases}$

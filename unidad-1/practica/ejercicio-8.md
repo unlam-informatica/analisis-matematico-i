@@ -11,7 +11,7 @@ permalink: /unidad-1/practica/ejercicio-8
 
 La concentración de un calmante en el torrente sanguíneo de una persona $t$ horas después de haberlo ingerido está dada por $C(t)=-t^2+6t$, donde $C$ es la concentración medida en miligramos por litro.
 
-## `8a`
+## 8a
 
 {: .enunciado }
 > Hallar el dominio y la imagen de $C$ bajo contexto. Graficar.
@@ -82,7 +82,7 @@ La concentración de un calmante en el torrente sanguíneo de una persona $t$ ho
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `8c`
+## 8c
 
 {: .enunciado }
 > Calcular la razón de cambio media de la concentración en los intervalos de tiempo $[1,2]$, $[1;1{,}5]$. Interpretar bajo el contexto del problema.

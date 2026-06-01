@@ -11,7 +11,7 @@ permalink: /unidad-1/practica/ejercicio-5
 
 Se desea construir una canaleta de desagüe a partir de una hoja rectangular de metal de $12$ cm de ancho y $1$ metro de largo. Se dobla la hoja hacia arriba $x$ cm en los dos bordes de $1$ metro de largo.
 
-### `5a`
+## 5a
 
 {: .enunciado }
 > Expresar el área de la sección transversal de la canaleta como una función de $x$.
@@ -66,7 +66,7 @@ Se desea construir una canaleta de desagüe a partir de una hoja rectangular de 
 >
 > **Verificación:** Coincide con la respuesta indicada en el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view). El dominio es el mismo para la función área $A(x)$ usada acá y para la función volumen $V(x)=100\cdot A(x)$ con la que trabaja el solucionario, ya que ambas se anulan en los mismos extremos.
 
-### `5c`
+## 5c
 
 {: .enunciado }
 > Graficar la función y estimar para qué valor de $x$ el área de la sección transversal de la canaleta es máxima.
@@ -92,7 +92,7 @@ Se desea construir una canaleta de desagüe a partir de una hoja rectangular de 
 >
 > **Verificación:** El valor $x=3$ cm donde se alcanza el máximo coincide con el indicado en el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view) ("se obtiene mayor volumen cuando se cortan $3$ cm de cada lado"). Como $V(x)=100\cdot A(x)$, los máximos de área y volumen ocurren en el mismo $x$. El valor $A_{\max}=18$ cm² no figura explícito en el solucionario (que reporta el máximo del volumen), pero es consistente con él: $V_{\max}=100\cdot 18=1800$ cm³ $=200\cdot 3\cdot(6-3)$.
 
-### `5d`
+## 5d
 
 {: .enunciado }
 > ¿Cuántos cm se deben doblar para que la canaleta tenga la capacidad máxima de transporte de agua?

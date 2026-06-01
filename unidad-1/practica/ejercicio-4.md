@@ -16,7 +16,7 @@ Para diseñar un vehículo es necesario crear un modelo que permita determinar l
 | $y$ | $0$ | $0{,}875$ | $1{,}721$ | $2{,}641$ | $3{,}531$ | $4{,}391$ | $5{,}241$ | $6{,}120$ | $6{,}992$ |
 {: .table-tight }
 
-### `4a`
+## 4a
 
 {: .enunciado }
 > ¿Cuál es la variable independiente y dependiente del problema? (con sus unidades).
@@ -31,7 +31,7 @@ Para diseñar un vehículo es necesario crear un modelo que permita determinar l
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `4b`
+## 4b
 
 {: .enunciado }
 > Usar **Tabla** en GeoGebra para graficar los puntos en un par de ejes cartesianos y comprobar la hipótesis de que el estiramiento "y" es proporcional a la masa "x" que se cuelga del resorte.
@@ -55,7 +55,7 @@ Para diseñar un vehículo es necesario crear un modelo que permita determinar l
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `4c`
+## 4c
 
 {: .enunciado }
 > Estimar la constante de proporcionalidad con GeoGebra utilizando el comando **Regresión** (se puede encontrar en los "tres puntitos" en la tabla) y armar la función obtenida. O hacerlo manualmente.
@@ -82,7 +82,7 @@ Para diseñar un vehículo es necesario crear un modelo que permita determinar l
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `4d`
+## 4d
 
 {: .enunciado }
 > Identificar dominio e imagen de la función definida en el ítem c) bajo el contexto del problema.
@@ -110,7 +110,7 @@ Para diseñar un vehículo es necesario crear un modelo que permita determinar l
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `4e`
+## 4e
 
 {: .enunciado }
 > Predecir el estiramiento del resorte si se le carga una masa de $10$ unidades de masa.
@@ -132,7 +132,7 @@ Para diseñar un vehículo es necesario crear un modelo que permita determinar l
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `4f`
+## 4f
 
 {: .enunciado }
 > ¿Cuál es la razón de cambio del estiramiento del resorte respecto a la carga colgada? Interpretar gráficamente.

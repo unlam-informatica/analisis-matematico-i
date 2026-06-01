@@ -11,7 +11,7 @@ permalink: /unidad-1/practica/ejercicio-7
 
 Encontrar una fórmula para la función descrita y dar su dominio.
 
-### `7a`
+## 7a
 
 {: .enunciado }
 > El área de un rectángulo cuyo perímetro es $20$ m en función de uno de sus lados.
@@ -45,7 +45,7 @@ Encontrar una fórmula para la función descrita y dar su dominio.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `7b`
+## 7b
 
 {: .enunciado }
 > El perímetro de un rectángulo cuya área es $16\text{ m}^2$ en función de uno de sus lados.
@@ -75,7 +75,7 @@ Encontrar una fórmula para la función descrita y dar su dominio.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `7c`
+## 7c
 
 {: .enunciado }
 > El área de un triángulo equilátero en función de la longitud de su lado.

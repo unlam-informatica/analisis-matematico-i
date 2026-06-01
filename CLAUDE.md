@@ -70,7 +70,7 @@ Adentro del archivo, la primera línea de contenido es un H1 con la consigna pad
 **Per-exercise template:**
 
 ```markdown
-### `1d`
+## 1d
 
 {: .enunciado }
 > Enunciado textual del ejercicio, copiado o reescrito de forma natural.
@@ -95,7 +95,7 @@ Adentro del archivo, la primera línea de contenido es un H1 con la consigna pad
 
 **Reglas que aplican siempre:**
 
-- El heading del ejercicio es `### \`Nx\`` (solo la numeración entre backticks; sin descripción al lado).
+- El heading de cada inciso es `## Nx` (H2, solo la numeración sin backticks ni descripción al lado). Como cada `ejercicio-N.md` tiene un H1 con la consigna padre, los incisos van un nivel abajo en H2.
 - El enunciado va en un callout `{: .enunciado }` con una sola línea de blockquote `>`, **copiado textual del PDF**. Si el enunciado tiene varios renglones, prefijar cada uno con `>`.
 - La resolución va en un callout `{: .resolucion }` y **todas** las líneas (texto, ecuaciones en bloque, líneas vacías de separación) deben empezar con `>` para no romper el blockquote.
 - Cada paso del desarrollo se presenta como: oración explicativa → `$$ecuación$$` en bloque. Evitar amontonar varias igualdades en una sola línea; separar en pasos cortos legibles.
