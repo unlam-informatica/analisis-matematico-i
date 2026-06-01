@@ -14,7 +14,7 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 ## 11a
 
 {: .enunciado }
-> $f(x)=\begin{cases} x+2 & x\leq -1, \\ -x & -1<x\leq 1, \\ 3x-4 & 1<x\leq 3, \\ 2 & x>3. \end{cases}$
+> $f(x)=\begin{cases} x+2 & x\leq -1, \\ -x & -1<x\leq 1, \\ 3x-4 & 1<x\leq 3, \\ 2 & x>3 \end{cases}$
 
 {: .resolucion }
 > **Dominio.** Los cuatro tramos cubren toda la recta real sin solapamientos:
@@ -26,9 +26,9 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 > - Tramo $x\leq -1$ con $f(x)=x+2$: como $x+2$ es creciente y $x\leq -1$, se tiene $f(x)\leq 1$. Aporta $(-\infty,1]$.
 > - Tramo $-1<x\leq 1$ con $f(x)=-x$: $-x$ es decreciente, en los extremos vale $1$ (excluido) y $-1$ (incluido). Aporta $[-1,1)$.
 > - Tramo $1<x\leq 3$ con $f(x)=3x-4$: creciente, en los extremos vale $-1$ (excluido) y $5$ (incluido). Aporta $(-1,5]$.
-> - Tramo $x>3$ con $f(x)=2$: constante. Aporta $\{2\}$.
+> - Tramo $x>3$ con $f(x)=2$: constante. Aporta $\lbrace 2\rbrace $.
 >
-> Unión: $(-\infty,1]\cup[-1,1)\cup(-1,5]\cup\{2\}=(-\infty,5]$.
+> Unión: $(-\infty,1]\cup[-1,1)\cup(-1,5]\cup\lbrace 2\rbrace =(-\infty,5]$.
 >
 > $$I_f=(-\infty,5]$$
 >
@@ -39,16 +39,16 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 > - $3x-4=0\iff x=\dfrac43$, válido porque $1<\dfrac43\leq 3$.
 > - El tramo $f(x)=2$ no se anula.
 >
-> Ceros: $\left\{-2,\,0,\,\dfrac43\right\}$.
+> Ceros: $\left\lbrace -2,\,0,\,\dfrac43\right\rbrace $.
 >
-> **Resultado:** $D_f=\mathbb{R}$, $I_f=(-\infty,5]$, ceros $\left\{-2,\,0,\,\dfrac43\right\}$.
+> **Resultado:** $D_f=\mathbb{R}$, $I_f=(-\infty,5]$, ceros $\left\lbrace -2,\,0,\,\dfrac43\right\rbrace $.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ## 11b
 
 {: .enunciado }
-> $f(x)=\begin{cases} \dfrac{x^2-6x+9}{x-3} & x\neq 3, \\ 4 & x=3. \end{cases}$
+> $f(x)=\begin{cases} \dfrac{x^2-6x+9}{x-3} & x\neq 3, \\ 4 & x=3 \end{cases}$
 
 {: .resolucion }
 > **Simplificación del primer tramo.** El numerador es un trinomio cuadrado perfecto:
@@ -67,18 +67,18 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 >
 > **Imagen.** La recta $y=x-3$ recorrería todo $\mathbb{R}$, pero al excluir $x=3$ pierde el valor $0$ que esa recta tomaba allí. El valor reasignado en $x=3$ es $4$, pero $4$ ya está cubierto por la recta en $x=7$. Por lo tanto:
 >
-> $$I_f=\mathbb{R}-\{0\}$$
+> $$I_f=\mathbb{R}-\lbrace 0\rbrace $$
 >
 > **Ceros.** Si fuera $x-3=0\iff x=3$, pero en $x=3$ la función vale $4\neq 0$. La función no tiene ceros.
 >
-> **Resultado:** $D_f=\mathbb{R}$, $I_f=\mathbb{R}-\{0\}$, sin ceros.
+> **Resultado:** $D_f=\mathbb{R}$, $I_f=\mathbb{R}-\lbrace 0\rbrace $, sin ceros.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ## 11c
 
 {: .enunciado }
-> $f(x)=\begin{cases} \lvert x+\tfrac12\rvert & x\leq 2, \\ \lvert x-4\rvert & x>2. \end{cases}$
+> $f(x)=\begin{cases} \lvert x+\tfrac12\rvert & x\leq 2, \\ \lvert x-4\rvert & x>2 \end{cases}$
 
 {: .resolucion }
 > **Dominio.** Los dos tramos cubren todo $\mathbb{R}$:
@@ -99,16 +99,16 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 > - $\lvert x+\tfrac12\rvert=0\iff x=-\dfrac12$, válido porque $-\dfrac12\leq 2$.
 > - $\lvert x-4\rvert=0\iff x=4$, válido porque $4>2$.
 >
-> Ceros: $\left\{-\dfrac12,\,4\right\}$.
+> Ceros: $\left\lbrace -\dfrac12,\,4\right\rbrace $.
 >
-> **Resultado:** $D_f=\mathbb{R}$, $I_f=[0,+\infty)$, ceros $\left\{-\dfrac12,\,4\right\}$.
+> **Resultado:** $D_f=\mathbb{R}$, $I_f=[0,+\infty)$, ceros $\left\lbrace -\dfrac12,\,4\right\rbrace $.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ## 11d
 
 {: .enunciado }
-> $f(x)=\begin{cases} \sqrt{x+4} & x\geq -3, \\ x+3 & -4\leq x<-3, \\ \sqrt[3]{x}+3 & x<-4. \end{cases}$
+> $f(x)=\begin{cases} \sqrt{x+4} & x\geq -3, \\ x+3 & -4\leq x<-3, \\ \sqrt[3]{x}+3 & x<-4 \end{cases}$
 
 {: .resolucion }
 > **Dominio.** Los tres tramos cubren $x<-4$, $-4\leq x<-3$ y $x\geq -3$, es decir todo $\mathbb{R}$:
@@ -131,8 +131,8 @@ Dada las siguientes funciones definidas por tramos, determinar dominio, imagen, 
 > - $x+3=0\iff x=-3$, pero $-3\notin[-4,-3)$: no es válido.
 > - $\sqrt[3]{x}+3=0\iff \sqrt[3]{x}=-3\iff x=-27$, válido porque $-27<-4$.
 >
-> Cero: $\{-27\}$.
+> Cero: $\lbrace -27\rbrace $.
 >
-> **Resultado:** $D_f=\mathbb{R}$, $I_f=\mathbb{R}$, cero $\{-27\}$.
+> **Resultado:** $D_f=\mathbb{R}$, $I_f=\mathbb{R}$, cero $\lbrace -27\rbrace $.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.

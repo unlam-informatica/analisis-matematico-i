@@ -61,9 +61,9 @@ $$y=2\operatorname{sen}(3x)\Rightarrow\operatorname{sen}(3x)=\dfrac y2\Rightarro
 
 ## 26g - $f(x)=\dfrac{-x+3}{x-1}$
 
-$D=\mathbb{R}-\{1\}$; AH $y=-1$, imagen $\mathbb{R}-\{-1\}$. Despejamos:
+$D=\mathbb{R}-\lbrace 1\rbrace $; AH $y=-1$, imagen $\mathbb{R}-\lbrace -1\rbrace $. Despejamos:
 
 $$y(x-1)=-x+3\Rightarrow yx-y=-x+3\Rightarrow x(y+1)=y+3\Rightarrow x=\dfrac{y+3}{y+1}$$
 
-**Resultado: $f:\mathbb{R}-\{1\}\to\mathbb{R}-\{-1\}$, $f^{-1}(x)=\dfrac{x+3}{x+1}$.** ✓ Coincide.
+**Resultado: $f:\mathbb{R}-\lbrace 1\rbrace \to\mathbb{R}-\lbrace -1\rbrace $, $f^{-1}(x)=\dfrac{x+3}{x+1}$.** ✓ Coincide.
 

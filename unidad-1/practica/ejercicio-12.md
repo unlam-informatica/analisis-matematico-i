@@ -11,7 +11,7 @@ permalink: /unidad-1/practica/ejercicio-12
 
 El beneficio de una empresa (en miles de euros) a lo largo de sus $8$ años de existencia viene dado por:
 
-$$B(t)=\begin{cases} -t^2+7t & \text{si } 0\leq t\leq 5, \\ 10 & \text{si } 5<t\leq 8. \end{cases}$$
+$$B(t)=\begin{cases} -t^2+7t & \text{si } 0\leq t\leq 5, \\ 10 & \text{si } 5<t\leq 8 \end{cases}$$
 
 Donde $t$ es el tiempo en años.
 

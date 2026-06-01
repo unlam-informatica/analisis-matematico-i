@@ -29,7 +29,7 @@ Esto **no** es igual a $h(x)=\dfrac{3x^2}{x-5}$ ni a $-h(x)$. No tiene paridad (
 
 > ⚠️ **Discrepancia:** Resultado calculado: $h$ **no es par** (no tiene paridad). Respuesta del documento: "es par".
 >
-> **Causa probable:** aunque el numerador $3x^2$ es par, el denominador $x-5$ rompe toda simetría; además el dominio $\mathbb{R}-\{5\}$ no es simétrico respecto al origen, condición necesaria para tener paridad. La afirmación del documento es **falsa**.
+> **Causa probable:** aunque el numerador $3x^2$ es par, el denominador $x-5$ rompe toda simetría; además el dominio $\mathbb{R}-\lbrace 5\rbrace $ no es simétrico respecto al origen, condición necesaria para tener paridad. La afirmación del documento es **falsa**.
 
 **c) $k(x)=\dfrac{x^3}{16-x^2}$ "es impar".**
 

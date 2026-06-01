@@ -17,7 +17,7 @@ permalink: /unidad-1/practica/ejercicio-20
 | $\ln x+2$ | 2 arriba | $(0,+\infty)$ |
 | $-\ln x$ | reflexión respecto al eje $x$ | $(0,+\infty)$ |
 | $\ln(-x)$ | reflexión respecto al eje $y$ | $(-\infty,0)$ |
-| $\ln\lvert x\rvert$ | par; suma la rama izquierda reflejada | $\mathbb{R}-\{0\}$ |
+| $\ln\lvert x\rvert$ | par; suma la rama izquierda reflejada | $\mathbb{R}-\lbrace 0\rbrace $ |
 | $\lvert\ln x\rvert$ | refleja hacia arriba la parte negativa ($0<x<1$) | $(0,+\infty)$ |
 {: .table-tight }
 

@@ -201,6 +201,6 @@ En todos los incisos calculamos $f(-x)$ reemplazando $x$ por $-x$ en la regla y 
 
 ## Resumen
 
-- **Pares:** $\{a,\,f,\,i,\,j\}$.
-- **Impares:** $\{c,\,e,\,g\}$.
-- **Ninguna:** $\{b,\,d,\,h\}$.
+- **Pares:** $\lbrace a,\,f,\,i,\,j\rbrace $.
+- **Impares:** $\lbrace c,\,e,\,g\rbrace $.
+- **Ninguna:** $\lbrace b,\,d,\,h\rbrace $.

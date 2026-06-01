@@ -67,9 +67,9 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Conjuntos de positividad y negatividad.** Como $\lvert x-2\rvert\geq 0$ siempre, y solo se anula en $x=2$:
 >
-> $$C^+=\mathbb{R}-\{2\},\qquad C^-=\varnothing$$
+> $$C^+=\mathbb{R}-\lbrace 2\rbrace ,\qquad C^-=\varnothing$$
 >
-> **Resultado:** $D_f=\mathbb{R}$, $I_f=[0,+\infty)$, intersecciones $(0,2)$ y $(2,0)$; $C^+=\mathbb{R}-\{2\}$, $C^-=\varnothing$.
+> **Resultado:** $D_f=\mathbb{R}$, $I_f=[0,+\infty)$, intersecciones $(0,2)$ y $(2,0)$; $C^+=\mathbb{R}-\lbrace 2\rbrace $, $C^-=\varnothing$.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
@@ -83,7 +83,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Dominio.** Denominador no nulo: $x-2\neq 0$, es decir:
 >
-> $$D_f=\mathbb{R}-\{2\}$$
+> $$D_f=\mathbb{R}-\lbrace 2\rbrace $$
 >
 > **Asíntotas e imagen.** La asíntota vertical es $x=2$. La horizontal se obtiene del cociente de coeficientes principales:
 >
@@ -91,7 +91,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > Como la función nunca toma el valor de la AH:
 >
-> $$I_f=\mathbb{R}-\{1\}$$
+> $$I_f=\mathbb{R}-\lbrace 1\rbrace $$
 >
 > **Intersecciones con los ejes.** $f(x)=0\iff x=0$ → corta a ambos ejes en $(0,0)$.
 >
@@ -105,7 +105,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > $$C^+=(-\infty,0)\cup(2,+\infty),\qquad C^-=(0,2)$$
 >
-> **Resultado:** $D_f=\mathbb{R}-\{2\}$, $I_f=\mathbb{R}-\{1\}$, intersección $(0,0)$; $C^+=(-\infty,0)\cup(2,+\infty)$, $C^-=(0,2)$. Asíntotas: $x=2$ (vertical) e $y=1$ (horizontal).
+> **Resultado:** $D_f=\mathbb{R}-\lbrace 2\rbrace $, $I_f=\mathbb{R}-\lbrace 1\rbrace $, intersección $(0,0)$; $C^+=(-\infty,0)\cup(2,+\infty)$, $C^-=(0,2)$. Asíntotas: $x=2$ (vertical) e $y=1$ (horizontal).
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
@@ -119,7 +119,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > **Dominio.** $x+4\neq 0$:
 >
-> $$D_g=\mathbb{R}-\{-4\}$$
+> $$D_g=\mathbb{R}-\lbrace -4\rbrace $$
 >
 > **Asíntotas e imagen.** Asíntota vertical $x=-4$. La horizontal es el cociente de coeficientes principales:
 >
@@ -127,7 +127,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > Imagen:
 >
-> $$I_g=\mathbb{R}-\{-2\}$$
+> $$I_g=\mathbb{R}-\lbrace -2\rbrace $$
 >
 > **Intersecciones con los ejes.** $g(x)=0\iff -2x+3=0\iff x=\dfrac32$ → $\left(\dfrac32,0\right)$. $g(0)=\dfrac{3}{4}$ → $\left(0,\dfrac34\right)$.
 >
@@ -141,7 +141,7 @@ Determinar dominio, imagen, intersecciones con los ejes coordenados y los conjun
 >
 > $$C^+=\left(-4,\dfrac32\right),\qquad C^-=(-\infty,-4)\cup\left(\dfrac32,+\infty\right)$$
 >
-> **Resultado:** $D_g=\mathbb{R}-\{-4\}$, $I_g=\mathbb{R}-\{-2\}$, intersecciones $\left(\dfrac32,0\right)$ y $\left(0,\dfrac34\right)$; $C^+=\left(-4,\dfrac32\right)$, $C^-=(-\infty,-4)\cup\left(\dfrac32,+\infty\right)$. Asíntotas: $x=-4$ (vertical) e $y=-2$ (horizontal).
+> **Resultado:** $D_g=\mathbb{R}-\lbrace -4\rbrace $, $I_g=\mathbb{R}-\lbrace -2\rbrace $, intersecciones $\left(\dfrac32,0\right)$ y $\left(0,\dfrac34\right)$; $C^+=\left(-4,\dfrac32\right)$, $C^-=(-\infty,-4)\cup\left(\dfrac32,+\infty\right)$. Asíntotas: $x=-4$ (vertical) e $y=-2$ (horizontal).
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 

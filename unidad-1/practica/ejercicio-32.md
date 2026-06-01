@@ -11,9 +11,9 @@ permalink: /unidad-1/practica/ejercicio-32
 
 **a) Si $f(x)=mx+b$, entonces $\Delta y=m$ en intervalos de longitud $1$.** En una recta $\Delta y=m\,\Delta x$; con $\Delta x=1$, $\Delta y=m$. **Verdadero.** ✓
 
-**b) Si la imagen consta de un solo número, su dominio también.** Una función constante $f(x)=k$ tiene imagen $\{k\}$ pero dominio $\mathbb{R}$. **Falso.** ✓
+**b) Si la imagen consta de un solo número, su dominio también.** Una función constante $f(x)=k$ tiene imagen $\lbrace k\rbrace $ pero dominio $\mathbb{R}$. **Falso.** ✓
 
-**c) Si $f$ y $g$ tienen el mismo dominio, $f/g$ también.** Contraejemplo: $f=x+1$, $g=x-2$ (ambas con $D=\mathbb{R}$), pero $\dfrac fg$ excluye $x=2$, $D=\mathbb{R}-\{2\}$. **Falso.** ✓
+**c) Si $f$ y $g$ tienen el mismo dominio, $f/g$ también.** Contraejemplo: $f=x+1$, $g=x-2$ (ambas con $D=\mathbb{R}$), pero $\dfrac fg$ excluye $x=2$, $D=\mathbb{R}-\lbrace 2\rbrace $. **Falso.** ✓
 
 **d) Si $\cos s=\cos t$ entonces $s=t$.** El coseno no es inyectivo: $\cos0=\cos2\pi=1$ pero $0\neq2\pi$. **Falso.** ✓
 
@@ -33,5 +33,5 @@ permalink: /unidad-1/practica/ejercicio-32
 
 **l) Toda función inyectiva es sobreyectiva.** Contraejemplo: $f:\mathbb{R}\to\mathbb{R}$, $f(x)=e^x$ es inyectiva pero su imagen es $(0,+\infty)\neq\mathbb{R}$. **Falso.** ✓
 
-**Resultado: Verdaderas $\{a,j,k\}$; Falsas $\{b,c,d,e,f,g,h,i,l\}$.** ✓ Coincide con la respuesta oficial.
+**Resultado: Verdaderas $\lbrace a,j,k\rbrace $; Falsas $\lbrace b,c,d,e,f,g,h,i,l\rbrace $.** ✓ Coincide con la respuesta oficial.
 

@@ -14,7 +14,7 @@ Hallar el dominio natural de las siguientes funciones.
 ## 9a
 
 {: .enunciado }
-> $y=-\sqrt{2}\,x^4-3x+\dfrac17\,x^2-2$.
+> $y=-\sqrt{2}\,x^4-3x+\dfrac17\,x^2-2$
 
 {: .resolucion }
 > La expresión es un polinomio de grado $4$ (suma de potencias enteras no negativas de $x$ con coeficientes reales). Los polinomios están definidos para todo número real.
@@ -37,14 +37,14 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > $$(x^2-3)^4\neq 0\iff x^2-3\neq 0\iff x\neq\pm\sqrt{3}$$
 >
-> **Resultado:** $D=\mathbb{R}-\{-\sqrt{3},\sqrt{3}\}$.
+> **Resultado:** $D=\mathbb{R}-\lbrace -\sqrt{3},\sqrt{3}\rbrace $.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ## 9c
 
 {: .enunciado }
-> $y=\dfrac{x^5-2x+5}{x^2-3x+2}$.
+> $y=\dfrac{x^5-2x+5}{x^2-3x+2}$
 
 {: .resolucion }
 > Cociente de polinomios. Los polinomios están definidos en $\mathbb{R}$, así que la única restricción viene del denominador no nulo. Factorizamos:
@@ -53,28 +53,28 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > Las raíces son $x=1$ y $x=2$. Hay que excluirlas.
 >
-> **Resultado:** $D=\mathbb{R}-\{1,2\}$.
+> **Resultado:** $D=\mathbb{R}-\lbrace 1,2\rbrace $.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ## 9d
 
 {: .enunciado }
-> $y=\dfrac{\lvert x-1\rvert}{x+2}$.
+> $y=\dfrac{\lvert x-1\rvert}{x+2}$
 
 {: .resolucion }
 > El numerador $\lvert x-1\rvert$ está definido para todo $x$. El denominador no debe anularse:
 >
 > $$x+2\neq 0\iff x\neq-2$$
 >
-> **Resultado:** $D=\mathbb{R}-\{-2\}$.
+> **Resultado:** $D=\mathbb{R}-\lbrace -2\rbrace $.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ## 9e
 
 {: .enunciado }
-> $y=\sqrt{x+2}$.
+> $y=\sqrt{x+2}$
 
 {: .resolucion }
 > La raíz cuadrada real exige radicando no negativo:
@@ -88,7 +88,7 @@ Hallar el dominio natural de las siguientes funciones.
 ## 9f
 
 {: .enunciado }
-> $y=\sqrt{\dfrac{1}{2x+1}-2}$.
+> $y=\sqrt{\dfrac{1}{2x+1}-2}$
 
 {: .resolucion }
 > La raíz cuadrada exige radicando no negativo y, además, el denominador interno no se debe anular:
@@ -120,7 +120,7 @@ Hallar el dominio natural de las siguientes funciones.
 ## 9g
 
 {: .enunciado }
-> $y=\dfrac{2x}{\sqrt{x^2-4}}$.
+> $y=\dfrac{2x}{\sqrt{x^2-4}}$
 
 {: .resolucion }
 > La raíz cuadrada está en el denominador, así que el radicando debe ser **estrictamente positivo**:
@@ -138,7 +138,7 @@ Hallar el dominio natural de las siguientes funciones.
 ## 9h
 
 {: .enunciado }
-> $y=\dfrac{x+3}{\lvert 3x+2\rvert}+\dfrac{1}{\sqrt[4]{x+1}}$.
+> $y=\dfrac{x+3}{\lvert 3x+2\rvert}+\dfrac{1}{\sqrt[4]{x+1}}$
 
 {: .resolucion }
 > Analizamos cada término por separado e intersectamos las condiciones.
@@ -153,14 +153,14 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > Intersecamos: $x>-1$ y $x\neq-\dfrac23$.
 >
-> **Resultado:** $D=(-1,+\infty)-\left\{-\dfrac23\right\}$.
+> **Resultado:** $D=(-1,+\infty)-\left\lbrace -\dfrac23\right\rbrace $.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ## 9i
 
 {: .enunciado }
-> $y=\dfrac{x^3+5x^2-6x}{x\,\sqrt[3]{x^2-1}}$.
+> $y=\dfrac{x^3+5x^2-6x}{x\,\sqrt[3]{x^2-1}}$
 
 {: .resolucion }
 > El numerador es un polinomio (definido en todo $\mathbb{R}$). El denominador es un producto que no se debe anular:
@@ -171,14 +171,14 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > $$x=0\quad\text{y}\quad \sqrt[3]{x^2-1}=0\iff x^2-1=0\iff x=\pm 1$$
 >
-> **Resultado:** $D=\mathbb{R}-\{-1,0,1\}$.
+> **Resultado:** $D=\mathbb{R}-\lbrace -1,0,1\rbrace $.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
 ## 9j
 
 {: .enunciado }
-> $y=\sqrt{\dfrac{3x-4}{x+1}}$.
+> $y=\sqrt{\dfrac{3x-4}{x+1}}$
 
 {: .resolucion }
 > La raíz cuadrada exige radicando no negativo. Como el radicando es un cociente, pedimos:
@@ -200,7 +200,7 @@ Hallar el dominio natural de las siguientes funciones.
 ## 9k
 
 {: .enunciado }
-> $y=\dfrac{\sqrt{3x-4}}{\sqrt{x+1}}$.
+> $y=\dfrac{\sqrt{3x-4}}{\sqrt{x+1}}$
 
 {: .resolucion }
 > A diferencia de `9j`, ahora hay **dos raíces separadas**, cada una con su propia condición.
@@ -217,7 +217,7 @@ Hallar el dominio natural de las siguientes funciones.
 ## 9l
 
 {: .enunciado }
-> $f(x)=\begin{cases} \sqrt{\dfrac{x-1}{x-3}} & \text{si } x<4, \\ \ln(5-x) & \text{si } x\geq 4. \end{cases}$
+> $f(x)=\begin{cases} \sqrt{\dfrac{x-1}{x-3}} & \text{si } x<4, \\ \ln(5-x) & \text{si } x\geq 4 \end{cases}$
 
 {: .resolucion }
 > Calculamos por separado el dominio admisible en cada tramo y luego unimos.
@@ -240,12 +240,12 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Resultado:** $D=(-\infty,1]\cup(3,5)$.
 >
-> **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=[1,5)-\{3\}$. La oficial parece haber estudiado mal el signo del cociente $\dfrac{x-1}{x-3}$: para $x<1$ ambos factores $x-1$ y $x-3$ son negativos, su cociente es positivo y la raíz existe. Por lo tanto todo $(-\infty,1]$ pertenece al dominio. **El dominio correcto es** $(-\infty,1]\cup(3,5)$.
+> **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=[1,5)-\lbrace 3\rbrace $. La oficial parece haber estudiado mal el signo del cociente $\dfrac{x-1}{x-3}$: para $x<1$ ambos factores $x-1$ y $x-3$ son negativos, su cociente es positivo y la raíz existe. Por lo tanto todo $(-\infty,1]$ pertenece al dominio. **El dominio correcto es** $(-\infty,1]\cup(3,5)$.
 
 ## 9m
 
 {: .enunciado }
-> $f(x)=\begin{cases} \sqrt{4-x^2} & \text{si } x\leq 2, \\ \dfrac{1}{x-1} & \text{si } x>2. \end{cases}$
+> $f(x)=\begin{cases} \sqrt{4-x^2} & \text{si } x\leq 2, \\ \dfrac{1}{x-1} & \text{si } x>2 \end{cases}$
 
 {: .resolucion }
 > **Tramo $x\leq 2$:** $\sqrt{4-x^2}$ exige $4-x^2\geq 0\iff -2\leq x\leq 2$. Intersecando con $x\leq 2$: $[-2,2]$.
@@ -261,7 +261,7 @@ Hallar el dominio natural de las siguientes funciones.
 ## 9n
 
 {: .enunciado }
-> $f(x)=\begin{cases} \sqrt{x^2-9} & \text{si } x<4, \\ \dfrac{1}{x^2-1} & \text{si } x\geq 4. \end{cases}$
+> $f(x)=\begin{cases} \sqrt{x^2-9} & \text{si } x<4, \\ \dfrac{1}{x^2-1} & \text{si } x\geq 4 \end{cases}$
 
 {: .resolucion }
 > **Tramo $x<4$:** $\sqrt{x^2-9}$ exige $x^2-9\geq 0\iff x\leq -3$ o $x\geq 3$. Intersecando con $x<4$: $(-\infty,-3]\cup[3,4)$.
@@ -277,7 +277,7 @@ Hallar el dominio natural de las siguientes funciones.
 ## 9ñ
 
 {: .enunciado }
-> $f(x)=\begin{cases} \dfrac{1}{\sqrt{5-x}} & \text{si } x<3, \\ \sqrt{\ln(x-2)} & \text{si } x\geq 3. \end{cases}$
+> $f(x)=\begin{cases} \dfrac{1}{\sqrt{5-x}} & \text{si } x<3, \\ \sqrt{\ln(x-2)} & \text{si } x\geq 3 \end{cases}$
 
 {: .resolucion }
 > **Tramo $x<3$:** $\dfrac{1}{\sqrt{5-x}}$ exige raíz definida y denominador no nulo, es decir $5-x>0\iff x<5$. Intersecando con $x<3$: vale todo $(-\infty,3)$.

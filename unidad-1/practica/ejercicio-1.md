@@ -175,7 +175,7 @@ permalink: /unidad-1/practica/ejercicio-1
 {: .resolucion }
 > La función valor absoluto se define como
 >
-> $$\lvert x\rvert=\begin{cases} x & \text{si } x\geq 0, \\ -x & \text{si } x<0. \end{cases}$$
+> $$\lvert x\rvert=\begin{cases} x & \text{si } x\geq 0, \\ -x & \text{si } x<0 \end{cases}$$
 >
 > Esta función está definida para todo número real, porque se puede calcular el valor absoluto de cualquier $x\in\mathbb{R}$.
 >
@@ -255,7 +255,7 @@ permalink: /unidad-1/practica/ejercicio-1
 >
 > Por lo tanto:
 >
-> $$D_h=\mathbb{R}-\{0\}$$
+> $$D_h=\mathbb{R}-\lbrace 0\rbrace $$
 >
 > Para hallar la imagen, observamos que
 >
@@ -265,11 +265,11 @@ permalink: /unidad-1/practica/ejercicio-1
 >
 > Entonces:
 >
-> $$I_h=\mathbb{R}-\{0\}$$
+> $$I_h=\mathbb{R}-\lbrace 0\rbrace $$
 >
 > Gráficamente, es una hipérbola con asíntota vertical $x=0$ y asíntota horizontal $y=0$.
 >
-> **Resultado:** $D_h=\mathbb{R}-\{0\}$ e $I_h=\mathbb{R}-\{0\}$.
+> **Resultado:** $D_h=\mathbb{R}-\lbrace 0\rbrace $ e $I_h=\mathbb{R}-\lbrace 0\rbrace $.
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
