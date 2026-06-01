@@ -17,7 +17,7 @@ Cada ejercicio está en su propia subpágina para acelerar la carga. Adentro vas
 ## Índice de ejercicios
 
 | Ejercicio | Tema |
-|-----------|------|
+|-----------|------|`
 | [Ejercicio 1](ejercicio-1) | Graficar, indicar dominio e imagen |
 | [Ejercicio 2](ejercicio-2) | Celsius y Fahrenheit |
 | [Ejercicio 3](ejercicio-3) | Vaciado de un tanque |

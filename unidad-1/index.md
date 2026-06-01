@@ -15,17 +15,22 @@ permalink: /unidad-1/
 
 | Tema | Descripción |
 |------|-------------|
-| Definición de función | Dominio, imagen, representación en diferentes registros |
-| Funciones como modelos | Uso de funciones para modelar situaciones reales |
-| Ceros y signo | Cálculo de ceros y análisis del signo de $f$ |
+| Definición de función | Terna, dominio, imagen, registros de representación |
+| Funciones como modelos | Proceso de modelado, variables, dominio en contexto |
+| Razón de cambio media | $\Delta y/\Delta x$, cambio uniforme vs no uniforme |
+| Ceros y signo | Cálculo de ceros y conjuntos $C^+$, $C^-$ |
 | Funciones par e impar | $f(-x) = f(x)$ (par) y $f(-x) = -f(x)$ (impar) |
-| Funciones algebraicas | Polinomiales, racionales, irracionales — gráficos y características |
-| Funciones trascendentes | $e^x$, $\ln x$, trigonométricas e inversas trigonométricas |
-| Función acotada | Existe $M$ tal que $\lvert f(x) \rvert \leq M$ para todo $x$ en el dominio |
+| Funciones algebraicas | Polinómicas (lineal, cuadrática, cúbica), racionales (homográfica, recíproco), irracionales (raíz cuadrada) |
+| Valor absoluto | $\lvert x\rvert$ y sus propiedades |
+| Funciones por trozos | Definidas a tramos, dominio, imagen y ceros tramo a tramo |
+| Funciones trascendentes | $e^x$, $\ln x$, trigonométricas e inversas trigonométricas, identidades |
+| Funciones acotadas y periódicas | Acotación, periodicidad, amplitud y frecuencia |
+| Igualdad de funciones | Cuándo dos funciones son iguales (dominio, codominio, regla) |
 | Álgebra de funciones | Suma, resta, producto, cociente y composición $f \circ g$ |
+| Dominio natural | Cálculo sistemático con restricciones por tipo de operación |
 | Transformaciones | Desplazamientos, alargamientos, contracciones y reflexiones de $f(x)$ |
-| Funciones biyectivas | Inyectividad, sobreyectividad y biyectividad |
-| Función inversa | Condición de existencia, cálculo y relación con la recta $y = x$ |
+| Funciones biyectivas | Inyectividad (método analítico y gráfico), sobreyectividad, biyectividad |
+| Función inversa | Procedimiento, propiedad gráfica respecto a $y = x$ |
 
 ## Material disponible
 
