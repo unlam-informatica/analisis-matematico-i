@@ -35,6 +35,9 @@ Razón de cambio media e instantánea. Derivada en un punto y como función. Rec
 ### [Unidad 4 — Polinomios de Taylor](./unidad-4/)
 Órdenes de contacto. Polinomio de Taylor y de Maclaurin. Aproximación lineal. Término complementario.
 
+### [GeoGebra — Guía práctica](./geogebra/)
+Comandos y técnicas de GeoGebra organizados por unidad: graficar funciones, calcular límites y derivadas, optimizar, polinomios de Taylor. Con ejemplos directos de los ejercicios de las prácticas.
+
 ---
 
 ## Bibliografía

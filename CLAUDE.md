@@ -25,6 +25,20 @@ Units are:
 - **Unidad 3:** Derivada
 - **Unidad 4:** Polinomios de Taylor
 
+There is also a top-level **GeoGebra** section (`geogebra/`) at the same navigation level as the units. It contains a practical guide to GeoGebra in Spanish, organized by unit:
+
+```
+geogebra/
+├── index.md                  # Overview, install instructions, ToC
+├── basico.md                  # Interface, views, commands, sliders
+├── funciones.md               # Unidad 1 (graphing, domain, transformations, regression)
+├── limites-continuidad.md     # Unidad 2 (Límite, asymptotes, continuity)
+├── derivada.md                # Unidad 3 (Derivada, tangent, optimization)
+└── taylor.md                  # Unidad 4 (PolinomioTaylor, approximations)
+```
+
+The GeoGebra index has `has_children: true` and `has_toc: false` (the manual ToC in the page replaces the auto-generated one).
+
 ## Content conventions
 
 - **Language**: All content is written in Spanish.

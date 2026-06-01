@@ -195,7 +195,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Resultado:** $D=(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$.
 >
-> **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=\left[\dfrac43,+\infty\right)$. La respuesta oficial omite la rama $(-\infty,-1)$, donde el cociente también es positivo (numerador y denominador ambos negativos) y por lo tanto la raíz existe. **El dominio correcto es** $(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$.
+> **Verificación:** ⚠️ Discrepa con el documento de respuestas oficiales, que reporta $D=\left[\dfrac43,+\infty\right)$. La respuesta oficial omite la rama $(-\infty,-1)$, donde el cociente también es positivo (numerador y denominador ambos negativos) y por lo tanto la raíz existe. **El dominio correcto es** $(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$.
 
 ## 9k
 
@@ -212,7 +212,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Resultado:** $D=\left[\dfrac43,+\infty\right)$.
 >
-> **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$. Aquí no es válido el intervalo $(-\infty,-1)$: para $x<-1$ se tiene $3x-4<0$ y $\sqrt{3x-4}$ no existe en $\mathbb{R}$. La oficial parece haber confundido este caso con `9j`. Notar la diferencia clave: $\sqrt{\dfrac{a}{b}}$ (`9j`) no es lo mismo que $\dfrac{\sqrt{a}}{\sqrt{b}}$ (`9k`) en cuanto a dominio. **El dominio correcto es** $\left[\dfrac43,+\infty\right)$.
+> **Verificación:** ⚠️ Discrepa con el documento de respuestas oficiales, que reporta $D=(-\infty,-1)\cup\left[\dfrac43,+\infty\right)$. Aquí no es válido el intervalo $(-\infty,-1)$: para $x<-1$ se tiene $3x-4<0$ y $\sqrt{3x-4}$ no existe en $\mathbb{R}$. La oficial parece haber confundido este caso con `9j`. Notar la diferencia clave: $\sqrt{\dfrac{a}{b}}$ (`9j`) no es lo mismo que $\dfrac{\sqrt{a}}{\sqrt{b}}$ (`9k`) en cuanto a dominio. **El dominio correcto es** $\left[\dfrac43,+\infty\right)$.
 
 ## 9l
 
@@ -240,7 +240,7 @@ Hallar el dominio natural de las siguientes funciones.
 >
 > **Resultado:** $D=(-\infty,1]\cup(3,5)$.
 >
-> **Verificación:** ⚠️ Discrepa con el [documento de respuestas oficiales](https://drive.google.com/file/d/1nJsGgi-k5Zgey-RVAF49SmP-BSGfFFGe/view), que reporta $D=[1,5)-\lbrace 3\rbrace $. La oficial parece haber estudiado mal el signo del cociente $\dfrac{x-1}{x-3}$: para $x<1$ ambos factores $x-1$ y $x-3$ son negativos, su cociente es positivo y la raíz existe. Por lo tanto todo $(-\infty,1]$ pertenece al dominio. **El dominio correcto es** $(-\infty,1]\cup(3,5)$.
+> **Verificación:** ⚠️ Discrepa con el documento de respuestas oficiales, que reporta $D=[1,5)-\lbrace 3\rbrace $. La oficial parece haber estudiado mal el signo del cociente $\dfrac{x-1}{x-3}$: para $x<1$ ambos factores $x-1$ y $x-3$ son negativos, su cociente es positivo y la raíz existe. Por lo tanto todo $(-\infty,1]$ pertenece al dominio. **El dominio correcto es** $(-\infty,1]\cup(3,5)$.
 
 ## 9m
 
@@ -264,9 +264,13 @@ Hallar el dominio natural de las siguientes funciones.
 > $f(x)=\begin{cases} \sqrt{x^2-9} & \text{si } x<4, \\ \dfrac{1}{x^2-1} & \text{si } x\geq 4 \end{cases}$
 
 {: .resolucion }
-> **Tramo $x<4$:** $\sqrt{x^2-9}$ exige $x^2-9\geq 0\iff x\leq -3$ o $x\geq 3$. Intersecando con $x<4$: $(-\infty,-3]\cup[3,4)$.
+> **Tramo $x<4$:** 
+> 
+> $\sqrt{x^2-9}$ exige $x^2-9\geq 0\iff x\leq -3$ o $x\geq 3$. Intersecando con $x<4$: $(-\infty,-3]\cup[3,4)$.
 >
-> **Tramo $x\geq 4$:** $\dfrac{1}{x^2-1}$ exige $x\neq\pm 1$, pero ninguno está en $[4,+\infty)$, por lo que vale todo $[4,+\infty)$.
+> **Tramo $x\geq 4$:** 
+> 
+> $\dfrac{1}{x^2-1}$ exige $x\neq\pm 1$, pero ninguno está en $[4,+\infty)$, por lo que vale todo $[4,+\infty)$.
 >
 > **Unión:** $(-\infty,-3]\cup[3,4)\cup[4,+\infty)=(-\infty,-3]\cup[3,+\infty)$.
 >
