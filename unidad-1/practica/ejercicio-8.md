@@ -11,7 +11,7 @@ permalink: /unidad-1/practica/ejercicio-8
 
 La concentración de un calmante en el torrente sanguíneo de una persona $t$ horas después de haberlo ingerido está dada por $C(t)=-t^2+6t$, donde $C$ es la concentración medida en miligramos por litro.
 
-### `8a`
+## `8a`
 
 {: .enunciado }
 > Hallar el dominio y la imagen de $C$ bajo contexto. Graficar.
@@ -48,7 +48,7 @@ La concentración de un calmante en el torrente sanguíneo de una persona $t$ ho
 >
 > **Verificación:** Coincide con la respuesta indicada en la guía.
 
-### `8b`
+## 8b
 
 {: .enunciado }
 > ¿En qué instantes de tiempo la concentración es mayor a $8$ mg/l?

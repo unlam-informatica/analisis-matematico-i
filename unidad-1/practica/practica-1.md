@@ -5,13 +5,14 @@ parent: Unidad 1 — Funciones
 permalink: /unidad-1/practica/practica-1
 nav_order: 2
 has_children: true
+has_toc: false
 ---
 
 # Práctica 1 — Funciones
 
-Resolución completa y paso a paso de la **Práctica 1: Funciones** del PDF oficial (`reference/practica.pdf`).
+Resolución completa y paso a paso de la **Práctica 1: Funciones**.
 
-Cada ejercicio está en su propia subpágina para acelerar la carga. Adentro vas a encontrar el enunciado copiado literal del PDF dentro de un callout, seguido por la resolución paso a paso, el resultado final y la verificación contra la respuesta oficial.
+Cada ejercicio está en su propia subpágina para acelerar la carga. Adentro vas a encontrar el enunciado copiado literal del PDF, seguido por la resolución paso a paso, el resultado final y la verificación contra la respuesta oficial.
 
 ## Índice de ejercicios
 
