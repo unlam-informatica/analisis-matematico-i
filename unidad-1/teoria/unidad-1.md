@@ -4,19 +4,10 @@ title: Teoría — Unidad 1
 parent: Unidad 1 — Funciones
 permalink: /unidad-1/teoria/unidad-1
 nav_order: 1
+has_toc: false
 ---
 
 # Unidad 1 — Funciones
-
-{: .no_toc }
-
-## Tabla de contenidos
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## 1. Definición de función
 

@@ -7,7 +7,7 @@ url: https://unlam-informatica.github.io
 baseurl: /analisis-matematico-i
 favicon_ico: "/assets/favicon/favicon.ico"
 
-color_scheme: dark
+# color_scheme: dark
 
 search_enabled: true
 heading_anchors: true
