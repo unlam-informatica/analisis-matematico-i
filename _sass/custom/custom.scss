@@ -1,30 +1,27 @@
-// custom.scss — se importa después del tema (reglas CSS adicionales).
+// custom.scss - se importa después del tema (reglas CSS adicionales).
+
+:root {
+  --unlam-green: #006b3f;
+  --unlam-green-dark: #004f30;
+  --unlam-yellow: #f3c300;
+  --unlam-ink: #17231d;
+  --unlam-muted: #5d6b64;
+  --unlam-surface: #ffffff;
+  --unlam-border: #d8e0dc;
+}
+
+body {
+  color: var(--unlam-ink);
+  // Fondo casi blanco para lectura prolongada: reduce el tinte verde global y
+  // deja la identidad UNLaM como acento, no como superficie dominante.
+  background: #fdfdfb;
+}
 
 // ─── Contenido principal ─────────────────────────────────────────────────────
 
 .main-content {
   max-width: 900px;
-  // font-size: 15.5px;
   line-height: 1.7;
-
-  // h1 {
-  //   font-size: 1.75rem;
-  //   border-bottom: 1px solid var(--border-color);
-  //   margin-top: 0;
-  //   padding-bottom: 0.4rem;
-  // }
-
-  // h2 {
-  //   font-size: 1.35rem;
-  //   border-bottom: 1px solid var(--border-color);
-  //   margin-top: 2.5rem;
-  //   padding-bottom: 0.3rem;
-  // }
-
-  // h3 {
-  //   font-size: 1.1rem;
-  //   margin-top: 1.75rem;
-  // }
 
   pre.highlight,
   div.highlighter-rouge {
@@ -34,22 +31,22 @@
   }
 
   // Resalta el LaTeX renderizado para separarlo visualmente del texto normal.
-  // Incluye selectores de MathJax v3 (mjx-container) y fallback de v2 (.MathJax_Display).
+  // Incluye selectores de MathJax v3 (mjx-container) y fallback de v2.
   mjx-container[display="true"],
   .MathJax_Display,
   .MathJax[display="true"] {
     position: relative;
     margin: 1.15rem 0 !important;
     padding: 1.3rem 1rem 0.9rem;
-    border: 1px solid rgba(116, 154, 255, 0.45);
+    border: 1px solid rgba(0, 107, 63, 0.18);
     border-radius: 8px;
-    background: rgba(116, 154, 255, 0.12);
-    box-shadow: 0 0 0 1px rgba(116, 154, 255, 0.08) inset;
+    background: #fffef7;
+    box-shadow: 0 0 0 1px rgba(0, 107, 63, 0.06) inset;
     overflow-x: auto;
 
     &::-webkit-scrollbar { height: 6px; }
     &::-webkit-scrollbar-thumb {
-      background: rgba(143, 176, 255, 0.55);
+      background: rgba(0, 107, 63, 0.28);
       border-radius: 6px;
     }
   }
@@ -61,30 +58,74 @@
     line-height: 1.2;
     padding: 0.14em 0.3em 0.18em;
     border-radius: 0.25em;
-    background: rgba(116, 154, 255, 0.12);
+    background: rgba(0, 107, 63, 0.07);
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
   }
 
-  table {
-    font-size: 0.9rem;
+  // ─── Tablas ─────────────────────────────────────────────────────────────
+  // Estilo simple y aireado: sin cebra. Solo un encabezado claro con línea de
+  // acento, separadores horizontales finos entre filas y un hover sutil.
+  .table-wrapper {
+    margin: 1.25rem 0;
+    padding: 0;
+    background: transparent;
+    border: 1px solid rgba(0, 107, 63, 0.10);
+    border-radius: 0;
+    box-shadow: none;
+  }
 
-    th { padding: 0.6rem 1rem; }
-    td { padding: 0.5rem 1rem; }
+  table {
+    display: table;            // anula el `display: block` del tema
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    background: transparent;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 107, 63, 0.10);
+    border-radius: 0;
+    box-shadow: none;
+
+    th,
+    td {
+      padding: 0.65rem 0.9rem;
+      text-align: left;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: top;
+    }
+
+    thead th {
+      font-weight: 600;
+      color: var(--unlam-green-dark);
+      background: rgba(0, 107, 63, 0.035);
+      border-bottom: 2px solid rgba(0, 107, 63, 0.32);
+    }
+
+    tbody tr {
+      transition: background-color 0.12s ease;
+    }
+
+    tbody tr:hover {
+      background-color: rgba(0, 107, 63, 0.045);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
   }
 
   // Tabla compacta: ancho ajustado al contenido, padding chico.
-  // Uso: pegar { .table-tight } debajo de la tabla en Markdown.
-  // Sirve tanto para tablas numéricas (datos x/y) como explicativas cortas:
-  // los valores numéricos y MathJax se comportan como tokens atómicos (no se
-  // parten), y los textos largos se envuelven naturalmente al haber `width: auto`.
+  // Uso: pegar {: .table-tight } debajo de la tabla en Markdown.
   table.table-tight {
-    display: table;          // anula el `display: block` del tema
-    width: auto;             // no se estira a todo el ancho del contenido
+    width: auto;
     margin-left: 0;
     margin-right: auto;
 
-    th, td {
+    th,
+    td {
       padding: 0.3rem 0.6rem;
       text-align: center;
     }
@@ -97,46 +138,115 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
 
-  // blockquote {
-  //   border-left: 3px solid var(--link-color);
-  // }
+// ─── Mermaid (diagramas de flujo / conceptos) ───────────────────────────────
+//
+// Los colores internos del SVG los define Mermaid. Acá solo damos aire, borde y
+// scroll horizontal al bloque renderizado.
+
+.main-content {
+  .mermaid {
+    display: block;
+    margin: 1.25rem 0;
+    padding: 1rem;
+    overflow-x: auto;
+    background: #fffef7;
+    border: 1px solid rgba(0, 107, 63, 0.18);
+    border-radius: 6px;
+  }
+
+  .mermaid svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #fffef7;
+  }
+}
+
+// ─── Callouts: paleta accesible para light mode ─────────────────────────────
+
+$callouts-acentos: (
+  "note":       #0969da,
+  "important":  #8a6a00,
+  "warning":    #cf222e,
+  "enunciado":  #9a6700,
+  "resolucion": #0a7f72,
+);
+
+@each $nombre, $acento in $callouts-acentos {
+  p.#{$nombre},
+  blockquote.#{$nombre} {
+    background-color: rgba($acento, 0.08);
+    border: 1px solid rgba($acento, 0.28);
+    border-left: 0.25rem solid $acento;
+
+    &::before { color: $acento; }
+  }
 }
 
 // ─── Sidebar nav ─────────────────────────────────────────────────────────────
 
+.side-bar {
+  background: #f8f9f8;
+  border-right-color: var(--unlam-border);
+}
+
+.site-title,
+.site-title:hover {
+  color: var(--unlam-green-dark);
+}
+
+.search-input {
+  background-color: var(--unlam-surface);
+  border-color: var(--unlam-border);
+
+  &:focus {
+    border-color: rgba(0, 107, 63, 0.55);
+    box-shadow: 0 0 0 3px rgba(0, 107, 63, 0.12);
+  }
+}
+
 .nav-list .nav-list-item .nav-list-link {
   font-size: 0.875rem;
   border-radius: 4px;
+
+  &:hover,
+  &.active {
+    color: var(--unlam-green-dark);
+    background: rgba(0, 107, 63, 0.075);
+  }
+}
+
+.main-header {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-bottom-color: var(--unlam-border);
+}
+
+.breadcrumb-nav-list-item,
+.breadcrumb-nav-list-item a {
+  color: var(--unlam-muted);
+}
+
+.btn-primary {
+  background-color: var(--unlam-green);
+  background-image: linear-gradient(180deg, var(--unlam-green), var(--unlam-green-dark));
 }
 
 // ─── Override del layout expansivo de just-the-docs en pantallas anchas ──────
-//
-// Por defecto, a partir del breakpoint "lg" (≥ 66.5rem / ≈ 1064px) el tema:
-//  • Expande el sidebar para rellenar el espacio a la izquierda del contenido
-//    centrado: en 1920px el sidebar mide ≈ 692px y sus links quedan alineados
-//    al borde derecho del panel (flex-end), apareciendo "centrados" en pantalla.
-//  • Limita .main y .main-content-wrap a 50rem (800px) con margin: auto.
-//
-// Lo reemplazamos por:
-//  • Sidebar fijo en 16.5rem (264px), pegado al borde izquierdo del viewport.
-//  • Links del sidebar alineados al borde izquierdo del panel (flex-start).
-//  • .main y .main-content-wrap sin restricción de ancho → el centrado lo
-//    gestiona nuestro .main-content-toc-wrap (max-width: 1280px, margin: auto).
 
-@media (min-width: 50rem) {       // breakpoint md — anular align-items: flex-end
+@media (min-width: 50rem) {
   .side-bar {
-    align-items: flex-start;      // links pegados a la izquierda del panel
+    align-items: flex-start;
   }
 }
 
-@media (min-width: 66.5rem) {     // breakpoint lg — anular layout expansivo
+@media (min-width: 66.5rem) {
   .side-bar {
-    width: 25rem;                 // 400px — espacio suficiente para items anidados largos
+    width: 25rem;
   }
 
-  // El tema fija site-header/site-nav/site-footer a $nav-width (16.5rem) en lg.
-  // Los expandimos al 100% del sidebar redimensionado.
   .site-header,
   .site-nav,
   .site-footer {
@@ -144,58 +254,46 @@
   }
 
   .side-bar + .main {
-    margin-left: 25rem;           // margen fijo = ancho del sidebar
+    margin-left: 25rem;
   }
 
   .main {
-    max-width: none;              // elimina el límite de 50rem (800px)
-    margin: 0;                    // elimina el auto-centrado de .main
+    max-width: none;
+    margin: 0;
   }
 
   .main-content-wrap {
-    max-width: none;              // elimina el límite interno de 50rem
-    // el padding lateral del tema se conserva
+    max-width: none;
   }
 
   .search-input-wrap {
-    max-width: none;              // quita el cap de $search-results-width (536px); width:100% del tema se conserva
+    max-width: none;
   }
 }
 
 // ─── Layout de 3 columnas: sidebar | contenido | TOC ─────────────────────────
-//
-// En pantallas >= 1100 px se activa el flex wrapper que rodea .main-content y
-// .page-toc. El sidebar (gestionado por el tema) queda pegado a la izquierda.
-// El bloque contenido+TOC se centra en el espacio disponible y ocupa ≈ 2/3 del
-// viewport (1280 px en 1920 px). El TOC está incluido dentro de ese ancho.
-// En pantallas menores el TOC se oculta y el contenido ocupa el ancho completo.
 
 @media (min-width: 1100px) {
-
-  // Wrapper inyectado por JS alrededor de .main-content y .page-toc
   .main-content-toc-wrap {
     display: flex;
     align-items: flex-start;
     gap: 2rem;
-    // ≈ 2/3 de 1920 px; el TOC (200 px + gap 32 px) está incluido en este ancho
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  // Contenido ocupa todo el espacio libre que deja el TOC dentro del wrapper
   .main-content {
     flex: 1;
-    min-width: 0;      // evita overflow en flex
-    max-width: none;   // el wrapper controla el ancho total; sin límite propio aquí
-    margin-left: 0;    // anula el margin: 0 auto del tema en este contexto
+    min-width: 0;
+    max-width: none;
+    margin-left: 0;
     margin-right: 0;
   }
 }
 
 // ─── TOC de página (columna derecha) ─────────────────────────────────────────
 
-// Oculto en pantallas pequeñas
 .page-toc { display: none; }
 
 @media (min-width: 1100px) {

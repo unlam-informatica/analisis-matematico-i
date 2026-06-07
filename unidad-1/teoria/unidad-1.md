@@ -272,7 +272,18 @@ Generalizando, una **función homográfica** tiene la forma:
 
 $$f(x) = \frac{ax + b}{cx + d}, \quad c \neq 0,\ ad - bc \neq 0$$
 
-(la condición $ad - bc \neq 0$ evita que se simplifique a una función constante).
+La condición $c \neq 0$ asegura que el denominador sea realmente lineal, y la condición $ad - bc \neq 0$ evita que la expresión se reduzca a una constante al simplificar.
+
+Para entenderla mejor, conviene reescribirla así:
+
+$$f(x) = \frac{a}{c} + \frac{bc - ad}{c^2}\cdot \frac{1}{x + \frac{d}{c}}$$
+
+Esta forma muestra algo importante:
+
+- parte de la gráfica de $\dfrac{1}{x}$
+- luego se traslada horizontalmente
+- se traslada verticalmente
+- y, según el signo de $\dfrac{bc-ad}{c^2}$, puede reflejarse respecto de los ejes
 
 - **Dominio:** $\mathbb{R} - \lbrace -\dfrac{d}{c}\rbrace$.
 - **Asíntota vertical:** $x = -\dfrac{d}{c}$ (raíz del denominador).
@@ -280,7 +291,24 @@ $$f(x) = \frac{ax + b}{cx + d}, \quad c \neq 0,\ ad - bc \neq 0$$
 - **Imagen:** $\mathbb{R} - \lbrace \dfrac{a}{c}\rbrace$.
 - **Raíz (cero):** $x = -\dfrac{b}{a}$, si $a \neq 0$.
 
-La gráfica es una **hipérbola** equilátera con asíntotas paralelas a los ejes coordenados. Toda función homográfica puede pensarse como una traslación, dilatación y/o reflexión de $f(x) = \dfrac{1}{x}$.
+La gráfica es una **hipérbola** equilátera con centro en la intersección de las asíntotas:
+
+$$\left(-\frac{d}{c},\; \frac{a}{c}\right)$$
+
+Eso significa que el punto “central” de la curva no está en el origen, sino desplazado.
+
+**Cómo leerla rápido:**
+
+1. Buscar el denominador y hallar dónde se anula: eso da la asíntota vertical.
+2. Comparar los coeficientes principales: eso da la asíntota horizontal.
+3. Ubicar el centro como cruce de ambas asíntotas.
+4. Ver si la curva queda como la de $\dfrac{1}{x}$ o reflejada.
+
+![Función homográfica general con asíntotas y centro](../images/homografica-general.svg){: .img-center}
+
+![Comparación entre $1/x$ y una traslación de una homográfica](../images/homografica-transformacion.svg){: .img-center}
+
+**Idea principal:** una función homográfica no es una función “nueva” desde cero; es una versión desplazada y reescalada de la función recíproca $\dfrac{1}{x}$.
 
 ### 6.3. Funciones irracionales (con raíces)
 

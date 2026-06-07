@@ -6,6 +6,33 @@ This file provides guidance to Codex when working with code in this repository.
 
 Study notes, guides, and practice exercises for the "Análisis Matemático I" course at UNLaM. Published as a GitHub Pages site using the `just-the-docs` Jekyll theme (`_config.yml`). GitHub Pages builds and deploys automatically on push — no local build step needed.
 
+## Site, layout, and style changes
+
+Before implementing ad hoc changes to **layout, styles, navigation, components, theme configuration, Mermaid, callouts, tables, code blocks, search, or site behavior**, first check whether **Just the Docs** already provides an official way to do it.
+
+- Official documentation: <https://just-the-docs.com/>
+- Prefer documented theme configuration, includes, Sass variables, components, and supported extensions.
+- Use custom CSS or JavaScript only when the official mechanism does not cover the case, is insufficient, or the change is specific to this site and justified.
+- If a custom solution is added, keep it scoped and briefly document why it exists when the reason is not obvious.
+
+## Diagrams, SVG, and images
+
+- Use **Mermaid** when a diagram improves understanding and the model should remain editable in Markdown.
+- Mermaid is enabled in `_config.yml`; use fenced blocks:
+
+  ````markdown
+  ```mermaid
+  flowchart LR
+      A[Límite lateral] --> B[Comparar izquierda y derecha]
+  ```
+  ````
+
+- Prefer Mermaid for flowcharts, conceptual relationships, process steps, and lightweight dependency diagrams.
+- If Mermaid is not expressive enough for a mathematical graph, curve, visual construction, or geometric explanation, use an explanatory **SVG** instead.
+- Store SVGs close to the content that uses them when they are unit-specific, such as `unidad-N/images/`; use `assets/img/` only for site-wide shared diagrams.
+- Keep SVGs simple, legible, lightweight, and with Spanish labels.
+- Do not add decorative images. Every diagram or image must clarify a concept, example, calculation, or GeoGebra workflow.
+
 ## Repository structure
 
 Each unit follows the same internal layout:

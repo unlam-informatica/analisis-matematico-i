@@ -67,6 +67,8 @@ permalink: /unidad-2/practica/ejercicio-1
 > 3) $\lim\limits_{x\to 0} f(x)$ &nbsp;&nbsp;&nbsp; 7) $f(0)$
 >
 > 4) $\lim\limits_{x\to 3} f(x)$ &nbsp;&nbsp;&nbsp; 8) $f(3)$
+>
+> ![1b](1b.png)
 
 {: .resolucion }
 > Sin disponer aquí del gráfico, usamos las respuestas oficiales y explicamos cómo se leen.
